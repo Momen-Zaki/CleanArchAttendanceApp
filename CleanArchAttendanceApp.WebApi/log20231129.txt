@@ -311,3 +311,232 @@ LIMIT 1
 2023-11-29 08:59:25.123 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 756 ms
 2023-11-29 08:59:25.153 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
 2023-11-29 08:59:25.159 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 956.2263ms
+2023-11-29 14:18:42.590 +02:00 [INF] Registered 12 endpoints in 2017 milliseconds.
+2023-11-29 14:18:43.088 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-29 14:18:43.168 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-29 14:18:43.168 +02:00 [INF] Hosting environment: Development
+2023-11-29 14:18:43.168 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-11-29 14:18:43.190 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-11-29 14:18:43.614 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:18:43.617 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 427.5539ms
+2023-11-29 14:18:43.827 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 209.1356ms
+2023-11-29 14:18:43.827 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:18:43.830 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 2.5294ms
+2023-11-29 14:18:43.894 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:18:43.913 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5475ms
+2023-11-29 14:18:44.067 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:18:44.115 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-11-29 14:18:44.643 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 575.6984ms
+2023-11-29 14:18:46.075 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-29 14:18:46.330 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-29 14:18:47.334 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-29 14:18:47.415 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-29 14:18:47.419 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 1344.6448ms
+2023-11-29 14:18:49.973 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-11-29 14:18:49.976 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:18:50.040 +02:00 [INF] Handling GetUserByIdQuery
+2023-11-29 14:18:50.040 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:18:50.119 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:18:50.121 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 80 ms
+2023-11-29 14:18:50.126 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:18:50.126 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 153.1380ms
+2023-11-29 14:19:00.754 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - -
+2023-11-29 14:19:00.757 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - - - 404 - - 3.2185ms
+2023-11-29 14:19:34.878 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - -
+2023-11-29 14:19:34.903 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - - - 404 - - 25.1791ms
+2023-11-29 14:19:44.090 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - -
+2023-11-29 14:19:44.093 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - - - 404 - - 2.5546ms
+2023-11-29 14:19:49.166 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-11-29 14:19:49.167 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-29 14:19:49.208 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-29 14:19:49.210 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-29 14:19:49.210 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 43.6909ms
+2023-11-29 14:19:59.052 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-11-29 14:19:59.053 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:19:59.053 +02:00 [INF] Handling GetUserByIdQuery
+2023-11-29 14:19:59.054 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:19:59.056 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:19:59.057 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 2 ms
+2023-11-29 14:19:59.057 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:19:59.057 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 5.5837ms
+2023-11-29 14:20:09.822 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-11-29 14:20:09.823 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:20:09.826 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-11-29 14:20:09.826 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:20:09.831 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:20:09.832 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 5 ms
+2023-11-29 14:20:09.843 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:20:09.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 20.6369ms
+2023-11-29 14:21:16.294 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - -
+2023-11-29 14:21:16.298 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - - - 404 - - 3.3218ms
+2023-11-29 14:21:25.840 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-11-29 14:21:25.840 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:21:25.841 +02:00 [INF] Handling GetUserByIdQuery
+2023-11-29 14:21:25.841 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:21:25.844 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:21:25.849 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 8 ms
+2023-11-29 14:21:25.850 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:21:25.850 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 10.5423ms
+2023-11-29 14:21:33.299 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - -
+2023-11-29 14:21:33.301 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - - - 404 - - 2.1277ms
+2023-11-29 14:21:55.936 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - -
+2023-11-29 14:21:55.937 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b}}/withrecords - - - 404 - - 1.8127ms
+2023-11-29 14:23:48.924 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/5a5b1ec3-0151-4261-9148-e6085ba98077d}/withrecords - -
+2023-11-29 14:23:48.927 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/5a5b1ec3-0151-4261-9148-e6085ba98077d}/withrecords - - - 404 - - 2.6348ms
+2023-11-29 14:24:02.042 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-11-29 14:24:02.044 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:24:02.045 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-11-29 14:24:02.045 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:24:02.047 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:24:02.049 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 4 ms
+2023-11-29 14:24:02.051 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:24:02.051 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 8.4713ms
+2023-11-29 14:25:37.853 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:25:37.863 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 10.2871ms
+2023-11-29 14:25:37.893 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:25:37.894 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 0.7486ms
+2023-11-29 14:25:37.956 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:25:37.967 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.1413ms
+2023-11-29 14:25:38.100 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:25:38.103 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 2.3336ms
+2023-11-29 14:25:40.156 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:25:40.163 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 7.1110ms
+2023-11-29 14:25:40.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:25:40.180 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 0.5762ms
+2023-11-29 14:25:40.206 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:25:40.211 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.0583ms
+2023-11-29 14:25:40.281 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:25:40.282 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.2923ms
+2023-11-29 14:25:43.967 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:25:43.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 11.1515ms
+2023-11-29 14:25:43.995 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:25:43.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 0.5171ms
+2023-11-29 14:25:44.016 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:25:44.023 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.4555ms
+2023-11-29 14:25:44.088 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:25:44.089 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.0452ms
+2023-11-29 14:25:52.285 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-11-29 14:25:52.286 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:25:52.287 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-11-29 14:25:52.287 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:25:52.289 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:25:52.289 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 1 ms
+2023-11-29 14:25:52.292 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:25:52.292 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 6.9132ms
+2023-11-29 14:26:06.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:26:06.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 7.2383ms
+2023-11-29 14:26:06.800 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:26:06.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 0.5054ms
+2023-11-29 14:26:06.829 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:26:06.835 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.4347ms
+2023-11-29 14:26:06.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:26:06.937 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 0.7515ms
+2023-11-29 14:26:12.497 +02:00 [INF] Registered 12 endpoints in 701 milliseconds.
+2023-11-29 14:26:12.654 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-29 14:26:12.720 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-29 14:26:12.720 +02:00 [INF] Hosting environment: Development
+2023-11-29 14:26:12.720 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-11-29 14:26:12.738 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-11-29 14:26:12.866 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:26:12.869 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 131.5211ms
+2023-11-29 14:26:13.029 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 163.5272ms
+2023-11-29 14:26:13.036 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:26:13.038 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 2.3215ms
+2023-11-29 14:26:13.094 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:26:13.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.7661ms
+2023-11-29 14:26:13.255 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:26:13.264 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-11-29 14:26:13.849 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 594.0379ms
+2023-11-29 14:26:16.849 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-29 14:26:16.954 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-29 14:26:17.661 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-29 14:26:17.749 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-29 14:26:17.754 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 905.3964ms
+2023-11-29 14:26:19.891 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-11-29 14:26:19.897 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:26:19.915 +02:00 [INF] Handling GetUserByIdQuery
+2023-11-29 14:26:19.915 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:26:19.998 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:26:20.000 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 84 ms
+2023-11-29 14:26:20.003 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-11-29 14:26:20.004 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 112.6531ms
+2023-11-29 14:26:22.653 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-11-29 14:26:22.654 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:26:22.657 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-11-29 14:26:22.657 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-11-29 14:26:22.702 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-29 14:26:22.703 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 45 ms
+2023-11-29 14:26:22.714 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-11-29 14:26:22.715 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 61.4999ms
+2023-11-29 14:48:48.267 +02:00 [INF] Registered 12 endpoints in 926 milliseconds.
+2023-11-29 14:48:48.435 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-29 14:48:48.503 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-29 14:48:48.504 +02:00 [INF] Hosting environment: Development
+2023-11-29 14:48:48.504 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-11-29 14:48:48.526 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-11-29 14:48:48.686 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 162.3493ms
+2023-11-29 14:48:48.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-29 14:48:48.902 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 215.0953ms
+2023-11-29 14:48:48.905 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-29 14:48:48.911 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 5.4739ms
+2023-11-29 14:48:48.977 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-29 14:48:48.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.0935ms
+2023-11-29 14:48:49.149 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-29 14:48:49.158 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-11-29 14:48:49.678 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 528.8403ms
+2023-11-29 14:48:52.488 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-11-29 14:48:52.599 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-29 14:48:52.632 +02:00 [INF] Handling GetAllUsersQuery
+2023-11-29 14:48:53.335 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-29 14:48:53.382 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 749 ms
+2023-11-29 14:48:53.418 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-29 14:48:53.424 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 935.2690ms
+2023-11-29 14:48:59.518 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-29 14:48:59.520 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-29 14:48:59.521 +02:00 [INF] Handling GetAllUsersQuery
+2023-11-29 14:48:59.532 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-29 14:48:59.533 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 11 ms
+2023-11-29 14:48:59.533 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-29 14:48:59.534 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 16.0521ms

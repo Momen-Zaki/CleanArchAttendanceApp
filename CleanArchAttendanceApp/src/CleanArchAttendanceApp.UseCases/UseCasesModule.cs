@@ -9,7 +9,10 @@ public class UseCasesModule: Module
 {
   protected override void Load(ContainerBuilder builder)
   {
-    builder.RegisterType<GetUserByIdQueryHandler>()
-      .As<IRequestHandler<GetUserByIdQuery, Result<UserWithoutAttendanceDto>>>();
+    //builder.RegisterType<GetUserByIdQueryHandler>()
+    //  .As<IRequestHandler<GetUserByIdQuery, Result<UserWithoutAttendanceDto>>>();
+
+    //builder.RegisterType<GetUserWithRecordsQueryHandler>()
+    //  .As<IRequestHandler<GetUserWithRecordsQuery, Result<UserDto>>>();
   }
 }

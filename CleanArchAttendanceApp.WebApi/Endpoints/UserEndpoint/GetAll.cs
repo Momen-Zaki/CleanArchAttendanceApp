@@ -1,17 +1,20 @@
-﻿using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
+using CleanArchAttendanceApp.UseCases.User.Query.GetAll;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
 //public class GetAll : EndpointWithoutRequest<GetAllResponse, GetAllMapper>
-public class GetAll : EndpointWithoutRequest<GetAllResponse>
+public class GetAllUsers : EndpointWithoutRequest<GetAllResponse>
 {
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public GetAll(IAttendanceRepository repository)
+    public GetAllUsers(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -46,23 +49,16 @@ public class GetAll : EndpointWithoutRequest<GetAllResponse>
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        var entities = await _repository.GetAllUsersAsync();
-        var users = new List<UserWithoutAttendanceDto>();
-        foreach (var e in entities)
-        {
-            users.Add(new UserWithoutAttendanceDto()
-            {
-                Id = e.Id,
-                FullName = e.FullName,
-                UserName = e.UserName,
-                Role = e.Role,
-                //PasswrodHash = e.PasswrodHash,
-            });
-        }
+        var query = new GetAllUsersQuery();
+        var result = await _mediator.Send(query);
 
-        Response.Users = users;
-        await SendAsync(Response);
-        //Response.Users = Map.FromEntityAsync(entities, ct);
-        //await SendMappedAsync(Response);
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
+
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
+
+        if (result.IsSuccess)
+            Response.Users = result.Value;
     }
 }
