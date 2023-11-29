@@ -129,3 +129,27 @@ SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
 FROM "Users" AS "u"
 2023-11-28 19:50:24.732 +02:00 [INF] Executed endpoint 'HTTP: GET users'
 2023-11-28 19:50:24.733 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/users - - - 200 - application/json 108.7494ms
+2023-11-28 20:06:27.610 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/users/create application/json 103
+2023-11-28 20:06:27.612 +02:00 [INF] Executing endpoint 'HTTP: POST /users/create'
+2023-11-28 20:06:27.717 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-11-28 20:06:27.796 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 11), @p2='?' (Size = 60), @p3='?' (Size = 8), @p4='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "FullName", "PasswrodHash", "Role", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2023-11-28 20:06:27.811 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__newUser_UserName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__newUser_UserName_0
+LIMIT 1
+2023-11-28 20:06:27.820 +02:00 [INF] Executed endpoint 'HTTP: POST /users/create'
+2023-11-28 20:06:27.820 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/users/create application/json 103 - 201 - application/json 209.6403ms
+2023-11-28 20:06:42.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/users - -
+2023-11-28 20:06:42.529 +02:00 [INF] Executing endpoint 'HTTP: GET users'
+2023-11-28 20:06:42.531 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-28 20:06:42.533 +02:00 [INF] Executed endpoint 'HTTP: GET users'
+2023-11-28 20:06:42.533 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/users - - - 200 - application/json 5.2035ms

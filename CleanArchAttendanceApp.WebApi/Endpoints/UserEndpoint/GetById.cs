@@ -1,16 +1,19 @@
-﻿using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
+using CleanArchAttendanceApp.UseCases.User.Query.GetById;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
-public class GetById : EndpointWithoutRequest<GetByIdResponse, GetByIdMapper>
+public class GetById : EndpointWithoutRequest<GetByIdResponse>
 {
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public GetById(IAttendanceRepository repository)
+    public GetById(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -40,12 +43,19 @@ public class GetById : EndpointWithoutRequest<GetByIdResponse, GetByIdMapper>
     public override async Task HandleAsync(CancellationToken ct)
     {
         var userId = Route<Guid>("Id");
-        var user = await _repository.GetUserByIdAsync(userId);
-        if (user == null)
-        {
-            await SendNoContentAsync();
-        }
-        Response = Map.FromEntity(user!);
-        await SendAsync(Response);
+        var query = new GetUserByIdQuery(userId);
+        var result = await _mediator.Send(query);
+
+        if (result.Status == ResultStatus.NotFound)
+            ThrowError("user not found!");
+
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
+
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
+
+        if (result.IsSuccess)
+            Response.User = result.Value;
     }
 }

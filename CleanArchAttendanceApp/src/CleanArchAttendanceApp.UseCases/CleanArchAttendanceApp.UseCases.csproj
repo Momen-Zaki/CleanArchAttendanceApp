@@ -17,4 +17,8 @@
     <ProjectReference Include="..\CleanArchAttendanceApp.Core\CleanArchAttendanceApp.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="User\Command\" />
+  </ItemGroup>
+
 </Project>

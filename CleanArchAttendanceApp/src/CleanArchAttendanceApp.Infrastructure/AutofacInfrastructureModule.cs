@@ -1,7 +1,12 @@
 ﻿using System.Reflection;
+using Ardalis.Result;
 using Ardalis.SharedKernel;
 using Autofac;
+using CleanArchAttendanceApp.Core.Entities;
 using CleanArchAttendanceApp.Core.Interfaces;
+using CleanArchAttendanceApp.Core.Models;
+using CleanArchAttendanceApp.UseCases;
+using CleanArchAttendanceApp.UseCases.User.Query.GetById;
 using MediatR;
 using MediatR.Pipeline;
 using Module = Autofac.Module;
@@ -33,13 +38,16 @@ public class AutofacInfrastructureModule : Module
   private void LoadAssemblies()
   {
     // TODO: Replace these types with any type in the appropriate assembly/project
-    //var coreAssembly = Assembly.GetAssembly(typeof(Contributor));
+    //var userAssembly = Assembly.GetAssembly(typeof(User));
+    //var attendanceAssembly = Assembly.GetAssembly(typeof(Attendance));
     var infrastructureAssembly = Assembly.GetAssembly(typeof(AutofacInfrastructureModule));
-    //var useCasesAssembly = Assembly.GetAssembly(typeof(CreateContributorCommand));
+    var useCasesAssembly = Assembly.GetAssembly(typeof(UseCasesModule));
+    
 
-    //AddToAssembliesIfNotNull(coreAssembly);
+    //AddToAssembliesIfNotNull(userAssembly);
+    //AddToAssembliesIfNotNull(attendanceAssembly);
     AddToAssembliesIfNotNull(infrastructureAssembly);
-    //AddToAssembliesIfNotNull(useCasesAssembly);
+    AddToAssembliesIfNotNull(useCasesAssembly);
   }
 
   protected override void Load(ContainerBuilder builder)

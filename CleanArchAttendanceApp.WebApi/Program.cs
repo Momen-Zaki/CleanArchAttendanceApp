@@ -85,7 +85,10 @@ else
     app.UseHsts();
 }
 
-app.UseFastEndpoints();
+app.UseFastEndpoints(c =>
+{
+    c.Endpoints.RoutePrefix = "api";
+});
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSwaggerGen(); // FastEndpoints middleware
