@@ -566,3 +566,106 @@ LIMIT 1
 2023-11-30 07:42:56.460 +02:00 [INF] Handled CreateUserCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 138 ms
 2023-11-30 07:42:56.462 +02:00 [INF] Executed endpoint 'HTTP: POST /api/users/create'
 2023-11-30 07:42:56.462 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44327/api/users/create application/json 114 - 200 - application/json 143.7439ms
+2023-11-30 08:11:47.997 +02:00 [INF] Registered 12 endpoints in 679 milliseconds.
+2023-11-30 08:11:48.165 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 08:11:48.237 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-30 08:11:48.237 +02:00 [INF] Hosting environment: Development
+2023-11-30 08:11:48.237 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-11-30 08:11:48.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-11-30 08:11:48.402 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-30 08:11:48.403 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 147.8004ms
+2023-11-30 08:11:48.626 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 221.7566ms
+2023-11-30 08:11:48.631 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-30 08:11:48.641 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 12390 application/javascript;+charset=utf-8 5.4947ms
+2023-11-30 08:11:48.701 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-30 08:11:48.729 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.6190ms
+2023-11-30 08:11:48.929 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-30 08:11:48.939 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-11-30 08:11:49.454 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 524.0815ms
+2023-11-30 08:11:57.101 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-30 08:11:57.204 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '11/30/2023 6:11:57 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-30 08:11:57.218 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '11/30/2023 6:11:57 AM'.
+2023-11-30 08:11:57.225 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-11-30 08:11:57.229 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-11-30 08:11:57.230 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 401 - - 129.5464ms
+2023-11-30 08:12:00.830 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-30 08:12:00.832 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '11/30/2023 6:12:00 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-11-30 08:12:00.832 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '11/30/2023 6:12:00 AM'.
+2023-11-30 08:12:00.833 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-11-30 08:12:00.833 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-11-30 08:12:00.834 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 401 - - 4.0594ms
+2023-11-30 08:12:09.590 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44327/api/login application/json 58
+2023-11-30 08:12:09.592 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-11-30 08:12:10.458 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-11-30 08:12:10.766 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-11-30 08:12:10.772 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44327/api/login application/json 58 - 200 - application/json 1181.9857ms
+2023-11-30 08:12:27.164 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-30 08:12:27.176 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-30 08:12:27.202 +02:00 [INF] Handling GetAllUsersQuery
+2023-11-30 08:12:27.221 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-30 08:12:27.224 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 21 ms
+2023-11-30 08:12:27.238 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-30 08:12:27.239 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 75.4207ms
+2023-11-30 08:14:35.022 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44327/api/users/5de215b2-7972-4adb-b0b5-e523e24aa391 application/json 112
+2023-11-30 08:14:35.026 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-11-30 08:14:35.026 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-11-30 08:14:35.026 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44327/api/users/5de215b2-7972-4adb-b0b5-e523e24aa391 application/json 112 - 401 - - 5.8901ms
+2023-11-30 08:14:44.297 +02:00 [INF] Request starting HTTP/1.1 PUT https://localhost:44327/api/users/5de215b2-7972-4adb-b0b5-e523e24aa391 application/json 112
+2023-11-30 08:14:44.298 +02:00 [INF] Executing endpoint 'HTTP: PUT /api/users/{Id:Guid}'
+2023-11-30 08:14:44.308 +02:00 [INF] Handling UpdateUserCommand
+2023-11-30 08:14:44.309 +02:00 [INF] Property userId : "5de215b2-7972-4adb-b0b5-e523e24aa391"
+2023-11-30 08:14:44.309 +02:00 [INF] Property fullname : updated omar mostafa
+2023-11-30 08:14:44.309 +02:00 [INF] Property username : omar
+2023-11-30 08:14:44.309 +02:00 [INF] Property password : password1
+2023-11-30 08:14:44.309 +02:00 [INF] Property role : employee
+2023-11-30 08:14:44.359 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-11-30 08:14:44.606 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (Size = 20), @p1='?' (Size = 60)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "FullName" = @p0, "PasswrodHash" = @p1
+WHERE "Id" = @p2
+RETURNING 1;
+2023-11-30 08:14:44.622 +02:00 [INF] Handled UpdateUserCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 313 ms
+2023-11-30 08:14:44.624 +02:00 [INF] Executed endpoint 'HTTP: PUT /api/users/{Id:Guid}'
+2023-11-30 08:14:44.624 +02:00 [INF] Request finished HTTP/1.1 PUT https://localhost:44327/api/users/5de215b2-7972-4adb-b0b5-e523e24aa391 application/json 112 - 200 - application/json 327.2528ms
+2023-11-30 08:14:49.491 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-11-30 08:14:49.492 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-11-30 08:14:49.493 +02:00 [INF] Handling GetAllUsersQuery
+2023-11-30 08:14:49.494 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-11-30 08:14:49.495 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 1 ms
+2023-11-30 08:14:49.495 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-11-30 08:14:49.495 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 3.9132ms

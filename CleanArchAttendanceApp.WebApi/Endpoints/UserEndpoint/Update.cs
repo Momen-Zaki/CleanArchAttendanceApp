@@ -1,16 +1,19 @@
-﻿using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
+using CleanArchAttendanceApp.UseCases.User.Command.Create;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
-public class Update : Endpoint<UpdateRequest, UpdateResponse, UpdateMapper>
+public class UpdateUser : Endpoint<UpdateRequest, UpdateResponse, UpdateMapper>
 {
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public Update(IAttendanceRepository repository)
+    public UpdateUser(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -46,19 +49,30 @@ public class Update : Endpoint<UpdateRequest, UpdateResponse, UpdateMapper>
     public override async Task HandleAsync(UpdateRequest req, CancellationToken ct)
     {
         var userId = Route<Guid>("Id");
-        var user = await _repository.GetUserByIdAsync(userId);
-        if (user == null)
-        {
-            ThrowError("User not found");
-        }
-        user.FullName = req.FullName;
-        user.UserName = req.UserName;
-        user.Role = req.Role;
-        user.PasswrodHash = BCrypt.Net.BCrypt.HashPassword(req.Password);
-        if (!await _repository.SaveChangesAsync())
-            ThrowError("Can't update user for now!");
 
-        Response = Map.FromEntity(user);
-        await SendAsync(Response, cancellation: ct);
+        // need more work
+        if (req.Role != UserRole.Employee && req.Role != UserRole.Admin)
+            ThrowError("Invalid User Role!");
+
+        var command = new UpdateUserCommand(userId,
+            req.FullName!,
+            req.UserName!,
+            req.Password!,
+            req.Role!);
+
+        var result = await _mediator.Send(command, ct);
+
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
+
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
+
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
+
+        if (result.IsSuccess)
+            Response.User = result.Value;
     }
 }
