@@ -7,7 +7,7 @@ using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
-public class UpdateUser : Endpoint<UpdateRequest, UpdateResponse, UpdateMapper>
+public class UpdateUser : Endpoint<UpdateRequest, UpdateResponse>
 {
     private readonly IMediator _mediator;
 

@@ -1,15 +1,18 @@
-﻿using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.Core.Interfaces;
+using CleanArchAttendanceApp.UseCases.User.Command.Create;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
 public class Delete : EndpointWithoutRequest<DeleteResponse>
 {
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public Delete(IAttendanceRepository repository)
+    public Delete(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -29,12 +32,21 @@ public class Delete : EndpointWithoutRequest<DeleteResponse>
     public override async Task HandleAsync(CancellationToken ct)
     {
         var userId = Route<Guid>("Id");
-        var user = await _repository.GetUserByIdAsync(userId);
-        if (user == null)
-        {
-            ThrowError("user not found");
-        }
-        await _repository.DeleteUserAsync(user);
-        await SendAsync(new() { Message = "user deleted!" }, cancellation: ct);
+
+        var command = new DeleteUserCommand(userId);
+        var result = await _mediator.Send(command);
+
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
+
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
+
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
+
+        if (result.IsSuccess)
+            Response.Message = "user deleted!";
     }
 }

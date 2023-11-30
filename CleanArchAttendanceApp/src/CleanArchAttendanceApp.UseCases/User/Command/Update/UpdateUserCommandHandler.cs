@@ -1,9 +1,7 @@
 ﻿using Ardalis.Result;
 using Ardalis.SharedKernel;
-using CleanArchAttendanceApp.Core.Entities;
 using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchAttendanceApp.UseCases.User.Command.Create;
 public class UpdateUserCommandHandler
