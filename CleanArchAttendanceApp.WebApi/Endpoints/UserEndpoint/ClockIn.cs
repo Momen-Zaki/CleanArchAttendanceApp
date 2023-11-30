@@ -1,16 +1,17 @@
-﻿using CleanArchAttendanceApp.Core.Entities;
-using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.UseCases.User.Command.ClockIn;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
 public class ClockIn : Endpoint<ClockInRequest, ClockInResponse>
 {
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public ClockIn(IAttendanceRepository repository)
+    public ClockIn(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -37,32 +38,20 @@ public class ClockIn : Endpoint<ClockInRequest, ClockInResponse>
         if (routeId.ToString() != req.Id)
             ThrowError("Unauthorized");
 
-        var user = await _repository.GetUserByIdAsync(routeId);
-        if (user == null)
-            ThrowError("user not found");
+        var command = new ClockInCommand(routeId);
+        var result = await _mediator.Send(command);
 
-        var attendanceForToday =
-            await _repository.GetAttendanceRecordForTodayByUserIDAsync(routeId);
-        if (attendanceForToday == null)
-        {
-            var newAttendance = new Attendance()
-            {
-                AttendanceDay = DateTime.Now,
-                ClockedIn = true,
-                ClockedInAt = DateTime.Now,
-                ClockedOut = false,
-                ClockedOutAt = new DateTime()
-            };
-            await _repository.AddAttendanceRecord(newAttendance, routeId);
-        }
-        else
-        {
-            attendanceForToday.ClockedIn = true;
-            attendanceForToday.ClockedInAt = DateTime.Now;
-        }
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
 
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
 
-        Response.Messege = "have a nice day";
-        await SendAsync(Response, cancellation: ct);
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
+
+        if (result.IsSuccess)
+            Response.Messege = "have a nice day";
     }
 }

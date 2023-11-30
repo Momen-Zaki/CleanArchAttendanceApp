@@ -16,6 +16,10 @@ public class UpdateUserCommandHandler
 
   public async Task<Result<UserWithoutAttendanceDto>> Handle(UpdateUserCommand req, CancellationToken ct)
   {
+    // need more work
+    if (req.role != UserRole.Employee && req.role != UserRole.Admin)
+      return Result.Error("Invalid User Role!");
+
     var user = await _repository.GetUserByIdAsync(req.userId);
     if (user == null)
       return Result.Error("User not found");

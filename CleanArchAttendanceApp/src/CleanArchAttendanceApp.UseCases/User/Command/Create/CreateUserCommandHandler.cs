@@ -17,6 +17,10 @@ public class CreateUserCommandHandler
 
   public async Task<Result<UserWithoutAttendanceDto>> Handle(CreateUserCommand req, CancellationToken ct)
   {
+    // need more work
+    if (req.role!= UserRole.Employee && req.role != UserRole.Admin)
+      return Result.Error("Invalid User Role!");
+
     var hashedPassword = BCrypt.Net.BCrypt.HashPassword(req.password);
 
     if (await _reposityory.GetUserByUserNameAsync(req.username!) != null)

@@ -1,7 +1,4 @@
 ﻿using Ardalis.Result;
-using CleanArchAttendanceApp.Core.Entities;
-using CleanArchAttendanceApp.Core.Interfaces;
-using CleanArchAttendanceApp.Core.Models;
 using CleanArchAttendanceApp.UseCases.User.Query.GetById;
 using FastEndpoints;
 using MediatR;
@@ -27,28 +24,6 @@ public class GetUserWithRecordsById: EndpointWithoutRequest<GetUserWithRecordsBy
             s.Summary = "Get User by Id with All his Attendance Record";
             s.Description = "Return a User with All his Attendance " +
                   "Record by the give id if it exists";
-            s.ResponseExamples[200] = new GetUserWithRecordsByIdResponse()
-            {
-                User = new UserDto()
-                {
-                    Id = Guid.NewGuid(),
-                    FullName = string.Empty,
-                    UserName = string.Empty,
-                    Role = UserRole.Employee,
-                    AttendanceRecords = new List<Attendance>()
-                    {
-                          new Attendance()
-                          {
-                              Id = Guid.NewGuid(),
-                              AttendanceDay = new DateTime(),
-                              ClockedIn = false,
-                              ClockedInAt = new DateTime(),
-                              ClockedOut = false,
-                              ClockedOutAt = new DateTime(),
-                          }
-                    }
-                }
-            };
             s.Responses[200] = "ok with the user data";
             s.Responses[404] = "Can't find a user with this Id";
         });
@@ -57,7 +32,7 @@ public class GetUserWithRecordsById: EndpointWithoutRequest<GetUserWithRecordsBy
     public override async Task HandleAsync(CancellationToken ct)
     {
         var userId = Route<Guid>("Id");
-        //var user = await _repository.GetUserByIdAsync(userId, true);
+
         var query = new GetUserWithRecordsQuery(userId);
         var result = await _mediator.Send(query);
 

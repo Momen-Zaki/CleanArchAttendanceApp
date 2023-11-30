@@ -1,5 +1,4 @@
 ﻿using Ardalis.Result;
-using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.UseCases.User.Command.Create;
 using FastEndpoints;
 using MediatR;
