@@ -1,12 +1,7 @@
 ﻿using System.Reflection;
-using Ardalis.Result;
 using Ardalis.SharedKernel;
 using Autofac;
-using CleanArchAttendanceApp.Core.Entities;
-using CleanArchAttendanceApp.Core.Interfaces;
-using CleanArchAttendanceApp.Core.Models;
 using CleanArchAttendanceApp.UseCases;
-using CleanArchAttendanceApp.UseCases.User.Query.GetById;
 using MediatR;
 using MediatR.Pipeline;
 using Module = Autofac.Module;
@@ -18,7 +13,7 @@ namespace CleanArchAttendanceApp.Infrastructure;
 /// </summary>
 public class AutofacInfrastructureModule : Module
 {
-  private readonly bool _isDevelopment = false;
+  private readonly bool _isDevelopment = true;
   private readonly List<Assembly> _assemblies = new();
 
   public AutofacInfrastructureModule(bool isDevelopment, Assembly? callingAssembly = null)
@@ -53,14 +48,14 @@ public class AutofacInfrastructureModule : Module
   protected override void Load(ContainerBuilder builder)
   {
     LoadAssemblies();
-    if (_isDevelopment)
-    {
-      RegisterDevelopmentOnlyDependencies(builder);
-    }
-    else
-    {
-      RegisterProductionOnlyDependencies(builder);
-    }
+    //if (_isDevelopment)
+    //{
+    //  RegisterDevelopmentOnlyDependencies(builder);
+    //}
+    //else
+    //{
+    //  RegisterProductionOnlyDependencies(builder);
+    //}
     //RegisterEF(builder);
     //RegisterQueries(builder);
     RegisterMediatR(builder);
@@ -112,8 +107,8 @@ public class AutofacInfrastructureModule : Module
     }
   }
 
-  private void RegisterDevelopmentOnlyDependencies(ContainerBuilder builder)
-  {
+  //private void RegisterDevelopmentOnlyDependencies(ContainerBuilder builder)
+  //{
     // NOTE: Add any development only services here
     //builder.RegisterType<FakeEmailSender>().As<IEmailSender>()
     //  .InstancePerLifetimeScope();
@@ -122,10 +117,10 @@ public class AutofacInfrastructureModule : Module
     //  .As<IListContributorsQueryService>()
     //  .InstancePerLifetimeScope();
 
-  }
+  //}
 
-  private void RegisterProductionOnlyDependencies(ContainerBuilder builder)
-  {
+  //private void RegisterProductionOnlyDependencies(ContainerBuilder builder)
+  //{
     // NOTE: Add any production only (real) services here
     //builder.RegisterType<SmtpEmailSender>().As<IEmailSender>()
     //  .InstancePerLifetimeScope();
@@ -134,5 +129,5 @@ public class AutofacInfrastructureModule : Module
     //  .As<IListContributorsQueryService>()
     //  .InstancePerLifetimeScope();
 
-  }
+  //}
 }

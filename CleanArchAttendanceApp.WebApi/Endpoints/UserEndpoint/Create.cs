@@ -36,7 +36,7 @@ public class Create : Endpoint<CreateRequest, CreateResponse>
         var command = new CreateUserCommand(
             req.FullName!, req.UserName!, req.Password!, req.Role!);
 
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(command, ct);
 
         if (result.Status == ResultStatus.Unauthorized)
             ThrowError("you need to login first!");

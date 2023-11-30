@@ -6,7 +6,7 @@ using CleanArchAttendanceApp.Core.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchAttendanceApp.UseCases.User.Command.Create;
+namespace CleanArchAttendanceApp.UseCases.User.Command.Delete;
 public class DeleteUserCommandHandler
   : ICommandHandler<DeleteUserCommand, Result>
 {

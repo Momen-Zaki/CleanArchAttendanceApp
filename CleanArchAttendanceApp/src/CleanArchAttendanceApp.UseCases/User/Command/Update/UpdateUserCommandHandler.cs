@@ -3,7 +3,7 @@ using Ardalis.SharedKernel;
 using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
 
-namespace CleanArchAttendanceApp.UseCases.User.Command.Create;
+namespace CleanArchAttendanceApp.UseCases.User.Command.Update;
 public class UpdateUserCommandHandler
   : ICommandHandler<UpdateUserCommand, Result<UserWithoutAttendanceDto>>
 {
@@ -38,7 +38,7 @@ public class UpdateUserCommandHandler
       FullName = user.FullName,
       UserName = user.UserName,
       Role = user.Role,
-    }; 
+    };
 
     return userToReturn;
   }

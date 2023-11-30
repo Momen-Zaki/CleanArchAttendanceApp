@@ -37,6 +37,7 @@ public class ClockInCommandHandler : ICommandHandler<ClockInCommand, Result>
     {
       attendanceForToday.ClockedIn = true;
       attendanceForToday.ClockedInAt = DateTime.Now;
+      await _repository.SaveChangesAsync();
     }
 
     return Result.Success();

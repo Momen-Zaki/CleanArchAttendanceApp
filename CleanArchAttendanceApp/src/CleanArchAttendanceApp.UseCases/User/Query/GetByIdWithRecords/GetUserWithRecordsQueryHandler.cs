@@ -4,8 +4,8 @@ using CleanArchAttendanceApp.Core.Entities;
 using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
 
-namespace CleanArchAttendanceApp.UseCases.User.Query.GetById;
-public class GetUserWithRecordsQueryHandler 
+namespace CleanArchAttendanceApp.UseCases.User.Query.GetByIdWithRecords;
+public class GetUserWithRecordsQueryHandler
   : IQueryHandler<GetUserWithRecordsQuery, Result<UserDto>>
 {
   private readonly IAttendanceRepository _repository;

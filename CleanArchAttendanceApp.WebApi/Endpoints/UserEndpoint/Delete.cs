@@ -1,5 +1,5 @@
 ﻿using Ardalis.Result;
-using CleanArchAttendanceApp.UseCases.User.Command.Create;
+using CleanArchAttendanceApp.UseCases.User.Command.Delete;
 using FastEndpoints;
 using MediatR;
 
@@ -33,7 +33,7 @@ public class Delete : EndpointWithoutRequest<DeleteResponse>
         var userId = Route<Guid>("Id");
 
         var command = new DeleteUserCommand(userId);
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(command, ct);
 
         if (result.Status == ResultStatus.Unauthorized)
             ThrowError("you need to login first!");

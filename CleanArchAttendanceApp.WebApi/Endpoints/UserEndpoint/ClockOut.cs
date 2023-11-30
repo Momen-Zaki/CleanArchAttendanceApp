@@ -1,15 +1,17 @@
-﻿using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.UseCases.User.Command.ClockOut;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
 public class ClockOut : Endpoint<ClockOutRequest, ClockOutResponse>
 {
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public ClockOut(IAttendanceRepository repository)
+    public ClockOut(IMediator mediator)
     {
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -36,27 +38,20 @@ public class ClockOut : Endpoint<ClockOutRequest, ClockOutResponse>
         if (routeId.ToString() != req.Id)
             ThrowError("Unauthorized");
 
-        var user = await _repository.GetUserByIdAsync(routeId);
-        if (user == null)
-            ThrowError("user not found");
+        var command = new ClockOutCommand(routeId);
+        var result = await _mediator.Send(command, ct);
 
-        var attendanceForToday =
-            await _repository.GetAttendanceRecordForTodayByUserIDAsync(routeId);
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
 
-        if (attendanceForToday == null
-            || attendanceForToday != null && attendanceForToday.ClockedIn == false)
-        {
-            ThrowError("pleas clock-in first");
-        }
-        else
-        {
-            attendanceForToday!.ClockedOut = true;
-            attendanceForToday.ClockedOutAt = DateTime.Now;
-            await _repository.SaveChangesAsync();
-        }
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
 
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
 
-        Response.Messege = "See u tomorrow";
-        await SendAsync(Response, cancellation: ct);
+        if (result.IsSuccess)
+            Response.Messege = "see u tomorrow";
     }
 }

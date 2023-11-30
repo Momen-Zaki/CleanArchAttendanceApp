@@ -1,5 +1,5 @@
 ﻿using Ardalis.Result;
-using CleanArchAttendanceApp.UseCases.User.Query.GetById;
+using CleanArchAttendanceApp.UseCases.User.Query.GetByIdWithRecords;
 using FastEndpoints;
 using MediatR;
 
@@ -34,7 +34,7 @@ public class GetUserWithRecordsById: EndpointWithoutRequest<GetUserWithRecordsBy
         var userId = Route<Guid>("Id");
 
         var query = new GetUserWithRecordsQuery(userId);
-        var result = await _mediator.Send(query);
+        var result = await _mediator.Send(query, ct);
 
         if (result.Status == ResultStatus.NotFound)
             ThrowError("user not found!");

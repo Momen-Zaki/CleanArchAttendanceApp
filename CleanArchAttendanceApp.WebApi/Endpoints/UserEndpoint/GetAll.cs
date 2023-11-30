@@ -30,7 +30,7 @@ public class GetAllUsers : EndpointWithoutRequest<GetAllResponse>
     public override async Task HandleAsync(CancellationToken ct)
     {
         var query = new GetAllUsersQuery();
-        var result = await _mediator.Send(query);
+        var result = await _mediator.Send(query, ct);
 
         if (result.Status == ResultStatus.Unauthorized)
             ThrowError("you need to login first!");

@@ -39,7 +39,7 @@ public class ClockIn : Endpoint<ClockInRequest, ClockInResponse>
             ThrowError("Unauthorized");
 
         var command = new ClockInCommand(routeId);
-        var result = await _mediator.Send(command);
+        var result = await _mediator.Send(command, ct);
 
         if (result.Status == ResultStatus.Unauthorized)
             ThrowError("you need to login first!");

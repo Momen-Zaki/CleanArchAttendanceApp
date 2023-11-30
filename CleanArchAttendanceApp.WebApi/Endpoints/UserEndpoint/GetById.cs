@@ -32,7 +32,7 @@ public class GetById : EndpointWithoutRequest<GetByIdResponse>
     {
         var userId = Route<Guid>("Id");
         var query = new GetUserByIdQuery(userId);
-        var result = await _mediator.Send(query);
+        var result = await _mediator.Send(query, ct);
 
         if (result.Status == ResultStatus.NotFound)
             ThrowError("user not found!");
