@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="BCrypt.Net-Core" />
     <PackageReference Include="MediatR" />
     <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" />
@@ -15,10 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanArchAttendanceApp.Core\CleanArchAttendanceApp.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="User\Command\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using CleanArchAttendanceApp.Core.Entities;
+﻿using Ardalis.SharedKernel;
+using CleanArchAttendanceApp.Core.Entities;
 using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Infrastructure.DbContexts;
 using Microsoft.EntityFrameworkCore;
@@ -59,6 +60,21 @@ public class AttendanceRepository : IAttendanceRepository
     return !(await _context.Users.FirstOrDefaultAsync
                     (u => u.UserName == username) == null);
   }
+
+  public async Task<bool> AddUser(string fullname,string username,string passwordhash, string role)
+  {
+    var newUser = new User()
+    {
+      FullName = fullname,
+      UserName = username,
+      PasswrodHash = passwordhash,
+      Role = role
+    };
+
+    _context.Users.Add(newUser);
+     return await SaveChangesAsync();
+  }
+
   public async Task<bool> DeleteUserAsync(User user)
   {
     _context.Remove(user);

@@ -1,20 +1,19 @@
-﻿using CleanArchAttendanceApp.Core.Entities;
-using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using Azure;
 using CleanArchAttendanceApp.Core.Models;
-using CleanArchAttendanceApp.Infrastructure.DbContexts;
+using CleanArchAttendanceApp.UseCases.User.Command.Create;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.UserEndpoint;
 
-public class Create : Endpoint<CreateRequest, CreateResponse, CreateMapper>
+public class Create : Endpoint<CreateRequest, CreateResponse>
 {
-    private readonly AttendanceContext _context;
-    private readonly IAttendanceRepository _reposityory;
+    private readonly IMediator _mediator;
 
-    public Create(AttendanceContext context, IAttendanceRepository reposityory)
+    public Create(IMediator mediator)
     {
-        _context = context;
-        _reposityory = reposityory;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -51,35 +50,29 @@ public class Create : Endpoint<CreateRequest, CreateResponse, CreateMapper>
 
     public override async Task HandleAsync(CreateRequest req, CancellationToken ct)
     {
-
-        var hashedPassword = BCrypt.Net.BCrypt.HashPassword(req.Password);
-
-        // NEED More Work
+        // need more work
         if (req.Role != UserRole.Employee && req.Role != UserRole.Admin)
-            AddError(r => r.Role!, "Role is not valid");
-        //ThrowError("Invalid User Role");
+            ThrowError("Invalid User Role!");
+        //ThrowError("Invalid User Role!");
 
-        if (await _reposityory.GetUserByUserNameAsync(req.UserName!) != null)
-            AddError(r => r.UserName!, "Username is taken");
+        var command = new CreateUserCommand(
+            req.FullName!, req.UserName!, req.Password!, req.Role!);
 
-        ThrowIfAnyErrors();
+        var result = await _mediator.Send(command);
 
-        var newUser = new User()
-        {
-            FullName = req.FullName,
-            UserName = req.UserName,
-            PasswrodHash = hashedPassword,
-            Role = req.Role,
-        };
-        _context.Users.Add(newUser);
-        await _reposityory.SaveChangesAsync();
+        if (result.Status == ResultStatus.Unauthorized)
+            //return Result.Error("you need to login first!");
+            ThrowError("you need to login first!");
 
-        var userCreated = _context.Users
-            .FirstOrDefault(u => u.UserName == newUser.UserName);
-        if (userCreated == null)
-            ThrowError("can't create a new user for now");
+        if (result.Status == ResultStatus.Forbidden)
+            //return Result.Error("you shouldn't be here!");
+            ThrowError("you shouldn't be here!");
 
-        Response = Map.FromEntity(userCreated!);
-        await SendCreatedAtAsync<GetById>("GetUserById", Response);
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
+
+        if(result.IsSuccess)
+            Response.User = result.Value;
     }
 }

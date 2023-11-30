@@ -61,22 +61,22 @@ public class AutofacInfrastructureModule : Module
     {
       RegisterProductionOnlyDependencies(builder);
     }
-    RegisterEF(builder);
-    RegisterQueries(builder);
+    //RegisterEF(builder);
+    //RegisterQueries(builder);
     RegisterMediatR(builder);
   }
 
-  private void RegisterEF(ContainerBuilder builder)
-  {
+  //private void RegisterEF(ContainerBuilder builder)
+  //{
     //builder.RegisterGeneric(typeof(EfRepository<>))
     //  .As(typeof(IRepository<>))
     //  .As(typeof(IReadRepository<>))
     //  .InstancePerLifetimeScope();
-  }
+  //}
 
-  private void RegisterQueries(ContainerBuilder builder)
-  {
-  }
+  //private void RegisterQueries(ContainerBuilder builder)
+  //{
+  //}
 
   private void RegisterMediatR(ContainerBuilder builder)
   {

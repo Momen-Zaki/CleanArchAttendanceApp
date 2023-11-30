@@ -8,6 +8,7 @@ public interface IAttendanceRepository
   public Task<IEnumerable<User>> GetAllUsersAsync();
   public Task<User> GetUserByIdAsync(Guid id, bool includeAttendance = false);
   public Task<User> FindUserByIdAsync(Guid id);
+  public Task<bool> AddUser(string fullname, string username, string passwordhash, string role);
   public Task<User> GetUserByUserNameAsync(string userName);
   public Task<bool> UserExistsWithIdAsync(Guid id);
   public Task<bool> UserExistsWithUserNameAsync(string username);
