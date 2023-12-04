@@ -17,8 +17,7 @@ public class Create : Endpoint<CreateRequest, CreateResponse>
     public override void Configure()
     {
         Post("/users/create");
-        //Roles("Admin");
-        Roles();
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Create a new user";
@@ -31,8 +30,6 @@ public class Create : Endpoint<CreateRequest, CreateResponse>
 
     public override async Task HandleAsync(CreateRequest req, CancellationToken ct)
     {
-        
-
         var command = new CreateUserCommand(
             req.FullName!, req.UserName!, req.Password!, req.Role!);
 

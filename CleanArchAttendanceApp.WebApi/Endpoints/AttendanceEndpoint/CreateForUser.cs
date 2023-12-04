@@ -17,7 +17,7 @@ public class CreateForUser
     public override void Configure()
     {
         Post("users/{Id:Guid}/attendance");
-        Roles("Admin");
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Create a new Attendance Record for a User";

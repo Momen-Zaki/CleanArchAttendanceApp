@@ -17,7 +17,7 @@ public class GetAllUsers : EndpointWithoutRequest<GetAllResponse>
     public override void Configure()
     {
         Get("users");
-        Roles("Admin");
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Get All Users";

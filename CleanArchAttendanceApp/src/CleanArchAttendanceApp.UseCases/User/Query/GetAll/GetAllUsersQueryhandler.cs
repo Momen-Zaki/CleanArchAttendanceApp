@@ -4,7 +4,7 @@ using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
 
 namespace CleanArchAttendanceApp.UseCases.User.Query.GetAll;
-internal class GetAllUsersQueryhandler
+public class GetAllUsersQueryhandler
   : IQueryHandler<GetAllUsersQuery, Result<List<UserWithoutAttendanceDto>>>
 {
   private readonly IAttendanceRepository _repository;

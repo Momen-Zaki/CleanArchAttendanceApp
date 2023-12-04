@@ -16,7 +16,7 @@ public class GetAllForUser : EndpointWithoutRequest<GetAllForUserResponse>
     public override void Configure()
     {
         Get("users/{Id:Guid}/attendance");
-        Roles("Admin");
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Get all Attendance Records of a User";

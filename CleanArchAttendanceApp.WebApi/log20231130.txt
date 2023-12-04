@@ -1147,3 +1147,23 @@ LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
 ORDER BY "t"."Id"
 2023-11-30 10:04:43.958 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
 2023-11-30 10:04:43.958 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/attendance - - - 200 - application/json 5.2360ms
+2023-11-30 10:05:55.588 +02:00 [INF] Registered 12 endpoints in 670 milliseconds.
+2023-11-30 10:05:55.791 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 10:05:55.895 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-30 10:05:55.896 +02:00 [INF] Hosting environment: Development
+2023-11-30 10:05:55.896 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-11-30 10:05:55.916 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-11-30 10:05:56.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-11-30 10:05:56.179 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 237.5328ms
+2023-11-30 10:05:56.347 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 164.4778ms
+2023-11-30 10:05:56.442 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-11-30 10:05:56.447 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 4.8530ms
+2023-11-30 10:05:56.521 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-11-30 10:05:56.575 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.1654ms
+2023-11-30 10:05:56.763 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-11-30 10:05:56.780 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-11-30 10:05:57.304 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 540.5203ms
+2023-11-30 10:06:04.720 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/clockin - 0
+2023-11-30 10:06:04.832 +02:00 [INF] Executing endpoint 'HTTP: POST /api/users/{Id:Guid}/clockin'
+2023-11-30 10:06:04.834 +02:00 [INF] Executed endpoint 'HTTP: POST /api/users/{Id:Guid}/clockin'
+2023-11-30 10:06:04.835 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/clockin - 0 - 415 - - 114.5612ms

@@ -17,7 +17,7 @@ public class GetUserWithRecordsById: EndpointWithoutRequest<GetUserWithRecordsBy
     public override void Configure()
     {
         Get("users/{Id:Guid}/withrecords");
-        Roles("Admin");
+        Roles("admin");
         Description(x => x.WithName("GetUserWithRecordsById"));
         Summary(s =>
         {

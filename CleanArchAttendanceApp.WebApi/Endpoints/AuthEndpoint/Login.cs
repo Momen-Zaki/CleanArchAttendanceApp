@@ -1,22 +1,17 @@
-﻿using CleanArchAttendanceApp.Core.Entities;
-using CleanArchAttendanceApp.Core.Interfaces;
-using CleanArchAttendanceApp.Core.Models;
-using FastEndpoints;
-using FastEndpoints.Security;
-using System.Security.Claims;
-using BCrypt;
+﻿using FastEndpoints;
+using Ardalis.Result;
+using CleanArchAttendanceApp.UseCases.Auth;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.AuthEndpoint;
 
 public class Login : Endpoint<LoginRequest, LoginResponse>
 {
-    private readonly IConfiguration configuration;
-    private readonly IAttendanceRepository _repository;
+    private readonly IMediator _mediator;
 
-    public Login(IConfiguration configuration, IAttendanceRepository repository)
+    public Login(IMediator mediator)
     {
-        this.configuration = configuration;
-        _repository = repository;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -30,63 +25,32 @@ public class Login : Endpoint<LoginRequest, LoginResponse>
             s.Description = "Return a Token for the give username and password";
             s.ExampleRequest = new LoginRequest()
             { Username = string.Empty, Password = string.Empty };
-            s.ResponseExamples[200] = new LoginResponse()
-            { UserName = string.Empty, Token = string.Empty };
+            s.ResponseExamples[200] = new LoginResponse();
             s.Responses[200] = "returns a Useraname and the Auth Token";
         });
     }
 
     public override async Task HandleAsync(LoginRequest req, CancellationToken ct)
     {
-        var user = new User();
-        var passwordMatches = false;
-        try
-        {
-            user = await _repository.GetUserByUserNameAsync(req.Username!);
-            passwordMatches = BCrypt.Net.BCrypt.Verify(req.Password, user.PasswrodHash);
-        }
-        catch (Exception)
-        {
-            ThrowError("user not found");
-        }
 
-        if (user == null || !passwordMatches)
-            ThrowError("The supplied credentials are invalid!");
+        var command = new LoginCommand(req.Username!, req.Password!);
 
-        var token = string.Empty;
-        if (user.Role == UserRole.Admin)
-        {
-            token = JWTBearer.CreateToken(
-                signingKey: configuration["JwtBearerDefaults:SecretKey"]!,
-                expireAt: DateTime.UtcNow.AddDays(1),
-                privileges: u =>
-                {
-                    u.Roles.Add("Admin");
-                    u.Claims.Add(
-                          new Claim("UserName", user.UserName!),
-                          new Claim("Role", user.Role),
-                          new Claim("Id", user.Id.ToString())
-                          );
-                });
-        }
-        else
-        {
-            token = JWTBearer.CreateToken(
-                signingKey: configuration["JwtBearerDefaults:SecretKey"]!,
-                expireAt: DateTime.UtcNow.AddDays(1),
-                privileges: u =>
-                {
-                    u.Roles.Add("Employee");
-                    u.Claims.Add(
-                          new Claim("UserName", user.UserName!),
-                          new Claim("Role", user.Role!),
-                          new Claim("Id", user.Id.ToString())
-                          );
-                });
-        }
+        var result = await _mediator.Send(command, ct);
 
-        Response.UserName = req.Username;
-        Response.Token = token;
-        await SendAsync(Response, cancellation: ct);
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
+
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
+
+        if (result.Status == ResultStatus.Invalid)
+            ThrowError("Invaild Credentials");
+
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
+
+        if (result.IsSuccess)
+            Response.UserCredentials = result.Value;
     }
 }

@@ -17,7 +17,7 @@ public class Delete : EndpointWithoutRequest<DeleteResponse>
     public override void Configure()
     {
         Delete("users/{Id:Guid}");
-        Roles("Admin");
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Delete User by Id";

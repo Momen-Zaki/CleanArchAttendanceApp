@@ -1,7 +1,8 @@
-﻿namespace CleanArchAttendanceApp.WebApi.Endpoints.AuthEndpoint;
+﻿using CleanArchAttendanceApp.Core.Models;
+
+namespace CleanArchAttendanceApp.WebApi.Endpoints.AuthEndpoint;
 
 public class LoginResponse
 {
-    public string? UserName { get; set; }
-    public string? Token { get; set; }
+    public LoggedInCredentials? UserCredentials { get; set; }
 }

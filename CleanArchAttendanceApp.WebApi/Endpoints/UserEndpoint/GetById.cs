@@ -17,7 +17,7 @@ public class GetById : EndpointWithoutRequest<GetByIdResponse>
     public override void Configure()
     {
         Get("users/{Id:Guid}");
-        Roles("Admin");
+        Roles("admin");
         Description(x => x.WithName("GetUserById"));
         Summary(s =>
         {

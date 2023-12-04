@@ -1,0 +1,857 @@
+2023-12-04 07:28:18.349 +02:00 [INF] Registered 12 endpoints in 2817 milliseconds.
+2023-12-04 07:28:19.125 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 07:28:19.356 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 07:28:19.356 +02:00 [INF] Hosting environment: Development
+2023-12-04 07:28:19.356 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 07:28:19.404 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 07:28:20.163 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 759.9561ms
+2023-12-04 07:28:20.166 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 07:28:20.363 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 194.5733ms
+2023-12-04 07:28:20.385 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/swagger-ui-bundle.js - -
+2023-12-04 07:28:20.386 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.css - -
+2023-12-04 07:28:20.388 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/swagger-ui.css - -
+2023-12-04 07:28:20.392 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 07:28:20.392 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/swagger-ui-standalone-preset.js - -
+2023-12-04 07:28:20.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 8.0775ms
+2023-12-04 07:28:20.410 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2023-12-04 07:28:20.410 +02:00 [INF] The file /swagger-ui.css was not modified
+2023-12-04 07:28:20.410 +02:00 [INF] The file /index.css was not modified
+2023-12-04 07:28:20.410 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2023-12-04 07:28:20.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 26.5442ms
+2023-12-04 07:28:20.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/swagger-ui.css - - - 304 - text/css 23.2222ms
+2023-12-04 07:28:20.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 18.8950ms
+2023-12-04 07:28:20.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.css - - - 304 - text/css 26.7269ms
+2023-12-04 07:28:20.467 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 07:28:20.508 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.5850ms
+2023-12-04 07:28:20.769 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 07:28:20.810 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 07:28:21.346 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 577.2970ms
+2023-12-04 08:17:32.705 +02:00 [INF] Registered 12 endpoints in 2936 milliseconds.
+2023-12-04 08:17:33.499 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:17:33.729 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:17:33.729 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:17:33.730 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:17:33.780 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:17:34.564 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:17:34.564 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 784.9637ms
+2023-12-04 08:17:34.780 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 214.6279ms
+2023-12-04 08:17:34.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:17:34.885 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.3975ms
+2023-12-04 08:17:34.885 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:17:34.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.6512ms
+2023-12-04 08:17:35.241 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:17:35.286 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:17:35.882 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 640.8934ms
+2023-12-04 08:17:40.307 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44327/api/login application/json 58
+2023-12-04 08:17:40.315 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:17:40.456 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:17:40.456 +02:00 [INF] Property username : momenzaki
+2023-12-04 08:17:40.456 +02:00 [INF] Property password : password
+2023-12-04 08:17:41.637 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:17:42.177 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 1719 ms
+2023-12-04 08:17:42.187 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:17:42.191 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44327/api/login application/json 58 - 200 - application/json 1883.8098ms
+2023-12-04 08:18:12.070 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:18:12.116 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:18:12.118 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:18:12.119 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 48.5332ms
+2023-12-04 08:18:23.626 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:18:23.628 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:18:23.628 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:18:23.630 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 3.6927ms
+2023-12-04 08:18:26.741 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-12-04 08:18:26.742 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:18:26.742 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:18:26.743 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 403 - - 2.3608ms
+2023-12-04 08:20:15.939 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 08:20:15.940 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:20:15.940 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:20:15.940 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 403 - - 1.1160ms
+2023-12-04 08:21:52.002 +02:00 [INF] Registered 12 endpoints in 562 milliseconds.
+2023-12-04 08:21:52.145 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:21:52.220 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:21:52.220 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:21:52.220 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:21:52.239 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:21:52.436 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:21:52.468 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 204.4383ms
+2023-12-04 08:21:52.564 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 128.0403ms
+2023-12-04 08:21:52.618 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:21:52.621 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.0974ms
+2023-12-04 08:21:52.672 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:21:52.701 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.1044ms
+2023-12-04 08:21:52.837 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:21:52.844 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:21:53.304 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 467.6578ms
+2023-12-04 08:22:03.510 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44327/api/login application/json 58
+2023-12-04 08:22:03.514 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:22:03.582 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:22:03.583 +02:00 [INF] Property username : momenzaki
+2023-12-04 08:22:03.584 +02:00 [INF] Property password : password
+2023-12-04 08:22:04.331 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:22:49.477 +02:00 [INF] Registered 12 endpoints in 681 milliseconds.
+2023-12-04 08:22:49.638 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:22:49.730 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:22:49.730 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:22:49.730 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:22:49.751 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:22:49.967 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:22:49.971 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 220.6369ms
+2023-12-04 08:22:50.094 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 126.4057ms
+2023-12-04 08:22:50.141 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:22:50.146 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.8046ms
+2023-12-04 08:22:50.202 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:22:50.236 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.1315ms
+2023-12-04 08:22:50.403 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:22:50.412 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:22:51.150 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 747.1985ms
+2023-12-04 08:22:51.772 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44327/api/login application/json 58
+2023-12-04 08:22:51.777 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:22:51.866 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:22:51.867 +02:00 [INF] Property username : momenzaki
+2023-12-04 08:22:51.867 +02:00 [INF] Property password : password
+2023-12-04 08:22:52.599 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:24:36.798 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 104930 ms
+2023-12-04 08:24:36.809 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:24:36.814 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44327/api/login application/json 58 - 200 - application/json 105042.3281ms
+2023-12-04 08:25:05.388 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:25:05.429 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:25:05.431 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:25:05.432 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 44.1946ms
+2023-12-04 08:25:09.501 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:25:09.502 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:25:09.502 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:25:09.503 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 2.2467ms
+2023-12-04 08:25:15.360 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:25:15.361 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:25:15.361 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:25:15.361 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 1.8152ms
+2023-12-04 08:27:10.818 +02:00 [INF] Registered 12 endpoints in 758 milliseconds.
+2023-12-04 08:27:10.990 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:27:11.077 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:27:11.077 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:27:11.077 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:27:11.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:27:11.329 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:27:11.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 228.8379ms
+2023-12-04 08:27:11.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 119.5074ms
+2023-12-04 08:27:11.502 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:27:11.508 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 2.6026ms
+2023-12-04 08:27:11.551 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:27:11.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.3820ms
+2023-12-04 08:27:11.744 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:27:11.753 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:27:12.282 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 538.2800ms
+2023-12-04 08:27:16.574 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:27:16.682 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:27:16.683 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:27:16.684 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 109.5771ms
+2023-12-04 08:27:22.914 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 08:27:22.916 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:27:22.916 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:27:22.917 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 3.0080ms
+2023-12-04 08:27:29.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 08:27:29.641 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:27:29.641 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:27:29.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 403 - - 2.0898ms
+2023-12-04 08:27:47.270 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 08:27:47.271 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:27:47.271 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:27:47.272 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 403 - - 1.8644ms
+2023-12-04 08:27:48.892 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 08:27:48.893 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:27:48.894 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:27:48.894 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 403 - - 1.7957ms
+2023-12-04 08:27:50.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 08:27:50.491 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:27:50.491 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:27:50.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 403 - - 1.8481ms
+2023-12-04 08:28:17.834 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-12-04 08:28:17.835 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:28:17.835 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:28:17.836 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 403 - - 1.7606ms
+2023-12-04 08:28:22.077 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/attendance - -
+2023-12-04 08:28:22.085 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 08:28:22.085 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 08:28:22.085 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/attendance - - - 403 - - 8.2511ms
+2023-12-04 08:29:22.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:29:22.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 7.5766ms
+2023-12-04 08:29:22.531 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:29:22.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.7945ms
+2023-12-04 08:29:22.588 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:29:22.604 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.5219ms
+2023-12-04 08:29:22.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:29:22.755 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.0785ms
+2023-12-04 08:29:22.770 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/favicon-32x32.png - -
+2023-12-04 08:29:22.775 +02:00 [INF] The file /favicon-32x32.png was not modified
+2023-12-04 08:29:22.776 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/favicon-32x32.png - - - 304 - image/png 5.8219ms
+2023-12-04 08:31:55.395 +02:00 [INF] Registered 12 endpoints in 618 milliseconds.
+2023-12-04 08:31:55.546 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:31:55.631 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:31:55.632 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:31:55.632 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:31:55.651 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:31:55.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:31:55.875 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 224.0959ms
+2023-12-04 08:31:55.979 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 110.4670ms
+2023-12-04 08:31:56.039 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:31:56.043 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.3738ms
+2023-12-04 08:31:56.098 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:31:56.134 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3603ms
+2023-12-04 08:31:56.300 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:31:56.310 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:31:56.853 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 552.6982ms
+2023-12-04 08:32:00.280 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 08:32:00.396 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 08:32:00.428 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 08:32:01.087 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 08:32:01.129 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 700 ms
+2023-12-04 08:32:01.159 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 08:32:01.165 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 884.6211ms
+2023-12-04 08:36:47.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:36:47.948 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 12.6833ms
+2023-12-04 08:36:48.091 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:36:48.093 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 1.3692ms
+2023-12-04 08:36:48.105 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:36:48.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.2631ms
+2023-12-04 08:36:48.269 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:36:48.271 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.7491ms
+2023-12-04 08:36:58.077 +02:00 [INF] Registered 12 endpoints in 663 milliseconds.
+2023-12-04 08:36:58.249 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:36:58.329 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:36:58.329 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:36:58.329 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:36:58.349 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:36:58.564 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:36:58.565 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 216.7375ms
+2023-12-04 08:36:58.673 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 109.0387ms
+2023-12-04 08:36:58.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:36:58.727 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 4.6404ms
+2023-12-04 08:36:58.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:36:58.812 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.9210ms
+2023-12-04 08:36:58.960 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:36:58.968 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:36:59.465 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 504.6683ms
+2023-12-04 08:37:04.184 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 08:37:04.188 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:37:04.268 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:37:04.268 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 84.3891ms
+2023-12-04 08:37:17.867 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 51
+2023-12-04 08:37:17.868 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:37:17.883 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:37:17.884 +02:00 [INF] Property username : momen
+2023-12-04 08:37:17.884 +02:00 [INF] Property password : password
+2023-12-04 08:37:18.620 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:41:31.924 +02:00 [INF] Registered 12 endpoints in 767 milliseconds.
+2023-12-04 08:41:32.082 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:41:32.165 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:41:32.165 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:41:32.165 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:41:32.190 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:41:32.404 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:41:32.409 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 220.2022ms
+2023-12-04 08:41:32.507 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 103.1282ms
+2023-12-04 08:41:32.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:41:32.566 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.6845ms
+2023-12-04 08:41:32.608 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:41:32.642 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.9039ms
+2023-12-04 08:41:32.825 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:41:32.839 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:41:33.314 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 488.6083ms
+2023-12-04 08:41:39.044 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 08:41:39.049 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:41:39.121 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:41:39.122 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 77.7401ms
+2023-12-04 08:41:47.519 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 43
+2023-12-04 08:41:47.520 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:41:47.522 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:41:47.522 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 43 - 400 - application/problem+json 3.2467ms
+2023-12-04 08:41:53.785 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 47
+2023-12-04 08:41:53.785 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:41:53.799 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:41:53.799 +02:00 [INF] Property username : momen
+2023-12-04 08:41:53.799 +02:00 [INF] Property password : pass
+2023-12-04 08:41:54.488 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:41:54.502 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 702 ms
+2023-12-04 08:41:54.503 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:41:54.507 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 47 - 204 - - 722.0661ms
+2023-12-04 08:46:17.843 +02:00 [INF] Registered 12 endpoints in 717 milliseconds.
+2023-12-04 08:46:17.995 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:46:18.069 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:46:18.070 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:46:18.070 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:46:18.088 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:46:18.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:46:18.292 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 204.2821ms
+2023-12-04 08:46:18.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 118.3523ms
+2023-12-04 08:46:18.418 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:46:18.424 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 5.1803ms
+2023-12-04 08:46:18.527 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:46:18.566 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.1575ms
+2023-12-04 08:46:18.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:46:18.727 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:46:19.191 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 470.6282ms
+2023-12-04 08:46:23.109 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 08:46:23.113 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:46:23.188 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:46:23.188 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 79.1984ms
+2023-12-04 08:46:31.741 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 43
+2023-12-04 08:46:31.742 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:46:31.744 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:46:31.744 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 43 - 400 - application/problem+json 2.8345ms
+2023-12-04 08:46:41.441 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 52
+2023-12-04 08:46:41.441 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:46:41.455 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:46:41.456 +02:00 [INF] Property username : momen
+2023-12-04 08:46:41.456 +02:00 [INF] Property password : password1
+2023-12-04 08:46:42.224 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:46:42.238 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 782 ms
+2023-12-04 08:46:42.239 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:46:42.243 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 52 - 204 - - 802.3611ms
+2023-12-04 08:48:51.722 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:48:51.733 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 10.3160ms
+2023-12-04 08:48:51.764 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:48:51.765 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.7968ms
+2023-12-04 08:48:51.828 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:48:51.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.4011ms
+2023-12-04 08:48:51.992 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:48:51.994 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.8373ms
+2023-12-04 08:48:53.841 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:48:53.846 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 4.6982ms
+2023-12-04 08:48:53.870 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:48:53.870 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.7292ms
+2023-12-04 08:48:53.893 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:48:53.903 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.0345ms
+2023-12-04 08:48:53.989 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:48:53.990 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 0.8040ms
+2023-12-04 08:49:02.462 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 08:49:02.463 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:49:02.467 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:49:02.468 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 6.3120ms
+2023-12-04 08:49:11.525 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 47
+2023-12-04 08:49:11.525 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:49:11.528 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:49:11.528 +02:00 [INF] Property username : momen
+2023-12-04 08:49:11.528 +02:00 [INF] Property password : pass
+2023-12-04 08:49:11.544 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:52:30.967 +02:00 [INF] Registered 12 endpoints in 637 milliseconds.
+2023-12-04 08:52:31.129 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:52:31.206 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:52:31.206 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:52:31.206 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:52:31.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:52:31.415 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:52:31.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 192.0788ms
+2023-12-04 08:52:31.516 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 100.9362ms
+2023-12-04 08:52:31.573 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:52:31.575 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 2.4369ms
+2023-12-04 08:52:31.622 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:52:31.670 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.6306ms
+2023-12-04 08:52:31.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:52:31.870 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:52:32.468 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 607.8481ms
+2023-12-04 08:52:46.727 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 47
+2023-12-04 08:52:46.731 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:52:46.802 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:52:46.803 +02:00 [INF] Property username : momen
+2023-12-04 08:52:46.803 +02:00 [INF] Property password : pass
+2023-12-04 08:52:47.563 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 08:54:51.643 +02:00 [INF] Registered 12 endpoints in 885 milliseconds.
+2023-12-04 08:54:51.834 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 08:54:51.914 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 08:54:51.914 +02:00 [INF] Hosting environment: Development
+2023-12-04 08:54:51.914 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 08:54:51.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 08:54:52.146 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 08:54:52.155 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 216.6363ms
+2023-12-04 08:54:52.265 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 118.7988ms
+2023-12-04 08:54:52.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 08:54:52.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 2.9972ms
+2023-12-04 08:54:52.382 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 08:54:52.416 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.2833ms
+2023-12-04 08:54:52.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 08:54:52.601 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 08:54:53.079 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 487.8241ms
+2023-12-04 08:55:13.317 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 08:55:13.327 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:55:13.400 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 08:55:13.401 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 83.5799ms
+2023-12-04 08:55:21.764 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 47
+2023-12-04 08:55:21.765 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 08:55:21.779 +02:00 [INF] Handling LoginCommand
+2023-12-04 08:55:21.780 +02:00 [INF] Property username : momen
+2023-12-04 08:55:21.780 +02:00 [INF] Property password : pass
+2023-12-04 08:55:22.570 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:00:59.153 +02:00 [INF] Registered 12 endpoints in 745 milliseconds.
+2023-12-04 09:00:59.325 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:00:59.432 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:00:59.432 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:00:59.432 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:00:59.452 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:00:59.666 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:00:59.667 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 216.0676ms
+2023-12-04 09:00:59.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 130.6802ms
+2023-12-04 09:00:59.816 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:00:59.821 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 4.4016ms
+2023-12-04 09:00:59.921 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:00:59.972 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.2924ms
+2023-12-04 09:01:00.168 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:01:00.190 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:01:00.733 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 564.6518ms
+2023-12-04 09:01:05.632 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 09:01:05.637 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:05.723 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:05.723 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 91.9367ms
+2023-12-04 09:01:10.191 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 49
+2023-12-04 09:01:10.192 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:10.205 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:01:10.206 +02:00 [INF] Property username : sdfsdf
+2023-12-04 09:01:10.206 +02:00 [INF] Property password : sfsdf
+2023-12-04 09:01:10.998 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:01:40.059 +02:00 [INF] Registered 12 endpoints in 596 milliseconds.
+2023-12-04 09:01:40.210 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:01:40.321 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:01:40.322 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:01:40.322 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:01:40.349 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:01:40.349 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 49
+2023-12-04 09:01:40.557 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:40.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:01:40.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 240.3082ms
+2023-12-04 09:01:40.693 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:01:40.694 +02:00 [INF] Property username : sdfsdf
+2023-12-04 09:01:40.695 +02:00 [INF] Property password : sfsdf
+2023-12-04 09:01:40.743 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 158.2468ms
+2023-12-04 09:01:40.771 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:01:40.780 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 8.4373ms
+2023-12-04 09:01:40.863 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:01:40.909 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.9361ms
+2023-12-04 09:01:41.068 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:01:41.076 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:01:41.606 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[@__userName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:01:41.692 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:41.717 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 649.0520ms
+2023-12-04 09:01:41.694 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CleanArchAttendanceApp.UseCases.Auth.LoginCommandHandler.Handle(LoginCommand req, CancellationToken ct) in E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp\src\CleanArchAttendanceApp.UseCases\Auth\LoginCommandHandler.cs:line 34
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CleanArchAttendanceApp.WebApi.Endpoints.AuthEndpoint.Login.HandleAsync(LoginRequest req, CancellationToken ct) in E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi\Endpoints\AuthEndpoint\Login.cs:line 38
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-04 09:01:41.776 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 49 - 500 - text/plain;+charset=utf-8 1432.5338ms
+2023-12-04 09:01:51.057 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 52
+2023-12-04 09:01:51.057 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:51.059 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:01:51.059 +02:00 [INF] Property username : sdfasdf
+2023-12-04 09:01:51.059 +02:00 [INF] Property password : sdfasdf
+2023-12-04 09:01:51.072 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:01:51.111 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:01:51.112 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CleanArchAttendanceApp.UseCases.Auth.LoginCommandHandler.Handle(LoginCommand req, CancellationToken ct) in E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp\src\CleanArchAttendanceApp.UseCases\Auth\LoginCommandHandler.cs:line 34
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CleanArchAttendanceApp.WebApi.Endpoints.AuthEndpoint.Login.HandleAsync(LoginRequest req, CancellationToken ct) in E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi\Endpoints\AuthEndpoint\Login.cs:line 38
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-04 09:01:51.114 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 52 - 500 - text/plain;+charset=utf-8 57.5169ms
+2023-12-04 09:02:18.667 +02:00 [INF] Registered 12 endpoints in 753 milliseconds.
+2023-12-04 09:02:18.833 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:02:18.914 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:02:18.914 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:02:18.914 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:02:18.931 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:02:19.148 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:02:19.158 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 226.0174ms
+2023-12-04 09:02:19.264 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 116.6612ms
+2023-12-04 09:02:19.279 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:02:19.283 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.7204ms
+2023-12-04 09:02:19.381 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:02:19.425 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.7650ms
+2023-12-04 09:02:19.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:02:19.615 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:02:20.088 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 480.9583ms
+2023-12-04 09:02:23.786 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 09:02:23.793 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:02:23.864 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:02:23.864 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 77.6216ms
+2023-12-04 09:02:27.837 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 53
+2023-12-04 09:02:27.839 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:02:27.855 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:02:27.856 +02:00 [INF] Property username : werqwer
+2023-12-04 09:02:27.856 +02:00 [INF] Property password : werwerwe
+2023-12-04 09:02:28.636 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userName_0='?' (Size = 7)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:03:08.474 +02:00 [INF] Registered 12 endpoints in 694 milliseconds.
+2023-12-04 09:03:08.633 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:03:08.714 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:03:08.714 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:03:08.715 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:03:08.738 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:03:08.957 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 220.0204ms
+2023-12-04 09:03:08.958 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:03:09.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 118.1447ms
+2023-12-04 09:03:09.097 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:03:09.106 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 6.7406ms
+2023-12-04 09:03:09.191 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:03:09.235 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.1694ms
+2023-12-04 09:03:09.390 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:03:09.397 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:03:09.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 493.3001ms
+2023-12-04 09:03:18.567 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 55
+2023-12-04 09:03:18.572 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:03:18.638 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:03:18.639 +02:00 [INF] Property username : fasdfasdf
+2023-12-04 09:03:18.639 +02:00 [INF] Property password : asdfasdf
+2023-12-04 09:03:19.434 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:04:15.743 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:04:15.745 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CleanArchAttendanceApp.UseCases.Auth.LoginCommandHandler.Handle(LoginCommand req, CancellationToken ct) in E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp\src\CleanArchAttendanceApp.UseCases\Auth\LoginCommandHandler.cs:line 34
+   at Ardalis.SharedKernel.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at CleanArchAttendanceApp.WebApi.Endpoints.AuthEndpoint.Login.HandleAsync(LoginRequest req, CancellationToken ct) in E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi\Endpoints\AuthEndpoint\Login.cs:line 38
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-04 09:04:15.775 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 55 - 500 - text/plain;+charset=utf-8 57208.9925ms
+2023-12-04 09:15:43.632 +02:00 [INF] Registered 12 endpoints in 638 milliseconds.
+2023-12-04 09:15:43.799 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:15:43.891 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:15:43.892 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:15:43.892 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:15:43.913 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:15:44.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:15:44.159 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 240.2419ms
+2023-12-04 09:15:44.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 112.9789ms
+2023-12-04 09:15:44.278 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:15:44.281 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 2.8589ms
+2023-12-04 09:15:44.361 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:15:44.401 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.9993ms
+2023-12-04 09:15:44.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:15:44.596 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:15:45.109 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 525.5936ms
+2023-12-04 09:15:48.384 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 09:15:48.389 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:15:48.469 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:15:48.470 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 85.8219ms
+2023-12-04 09:15:58.801 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 49
+2023-12-04 09:15:58.802 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:15:58.817 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:15:58.818 +02:00 [INF] Property username : asdas
+2023-12-04 09:15:58.818 +02:00 [INF] Property password : asdasd
+2023-12-04 09:15:59.578 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:15:59.593 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 774 ms
+2023-12-04 09:15:59.632 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:15:59.636 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 49 - 400 - application/problem+json 835.2761ms
+2023-12-04 09:16:13.156 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 51
+2023-12-04 09:16:13.157 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:16:13.159 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:16:13.159 +02:00 [INF] Property username : momen
+2023-12-04 09:16:13.159 +02:00 [INF] Property password : password
+2023-12-04 09:16:13.172 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:16:13.173 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 13 ms
+2023-12-04 09:16:13.189 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:16:13.190 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 51 - 400 - application/problem+json 33.9019ms
+2023-12-04 09:16:14.700 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 51
+2023-12-04 09:16:14.700 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:16:14.701 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:16:14.701 +02:00 [INF] Property username : momen
+2023-12-04 09:16:14.701 +02:00 [INF] Property password : password
+2023-12-04 09:16:14.735 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:16:14.736 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 34 ms
+2023-12-04 09:16:14.752 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:16:14.753 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 51 - 400 - application/problem+json 52.8507ms
+2023-12-04 09:16:24.955 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 55
+2023-12-04 09:16:24.956 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:16:24.959 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:16:24.959 +02:00 [INF] Property username : momenzaki
+2023-12-04 09:16:24.959 +02:00 [INF] Property password : password
+2023-12-04 09:16:24.961 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:16:25.285 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 325 ms
+2023-12-04 09:16:25.290 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:16:25.291 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 55 - 200 - application/json 335.7532ms
+2023-12-04 09:16:44.116 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 09:16:44.154 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 09:16:44.167 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 09:16:44.175 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 09:16:44.178 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 11 ms
+2023-12-04 09:16:44.187 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 09:16:44.187 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 70.7433ms
+2023-12-04 09:16:58.697 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:16:58.700 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 3.5480ms
+2023-12-04 09:16:58.729 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:16:58.730 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.9160ms
+2023-12-04 09:16:58.792 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:16:58.804 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.5424ms
+2023-12-04 09:16:58.944 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:16:58.946 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 2.2310ms
+2023-12-04 09:17:01.690 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 09:17:01.692 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 09:17:01.693 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 09:17:01.696 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 09:17:01.696 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 2 ms
+2023-12-04 09:17:01.699 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 09:17:01.699 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 8.8640ms
+2023-12-04 09:17:07.139 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 09:17:07.140 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 09:17:07.141 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 09:17:07.141 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 09:17:07.142 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 0 ms
+2023-12-04 09:17:07.142 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 09:17:07.142 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 3.1249ms
+2023-12-04 09:17:14.984 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-12-04 09:17:14.988 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 09:17:14.989 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 09:17:14.990 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 403 - - 5.6717ms
+2023-12-04 09:17:18.988 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 09:17:18.988 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 09:17:18.989 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 09:17:18.990 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 09:17:18.990 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 0 ms
+2023-12-04 09:17:18.990 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 09:17:18.991 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 2.8034ms
+2023-12-04 09:17:27.294 +02:00 [INF] Registered 12 endpoints in 654 milliseconds.
+2023-12-04 09:17:27.443 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:17:27.520 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:17:27.520 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:17:27.520 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:17:27.538 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:17:27.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:17:27.799 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 260.4292ms
+2023-12-04 09:17:27.903 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 09:17:27.942 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 147.4945ms
+2023-12-04 09:17:27.997 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:17:28.003 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 5.5646ms
+2023-12-04 09:17:28.038 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 09:17:28.039 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 09:17:28.040 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 403 - - 136.5852ms
+2023-12-04 09:17:28.059 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:17:28.101 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.4810ms
+2023-12-04 09:17:28.259 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:17:28.269 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:17:28.711 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 451.7538ms
+2023-12-04 09:17:34.584 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 09:17:34.586 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-04 09:17:34.587 +02:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-04 09:17:34.587 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 403 - - 2.6484ms
+2023-12-04 09:21:10.373 +02:00 [INF] Registered 12 endpoints in 660 milliseconds.
+2023-12-04 09:21:10.520 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:21:10.591 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:21:10.591 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:21:10.591 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:21:10.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:21:10.809 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:21:10.815 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 206.4436ms
+2023-12-04 09:21:10.904 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 95.2939ms
+2023-12-04 09:21:10.974 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:21:10.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.2539ms
+2023-12-04 09:21:11.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:21:11.066 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.8208ms
+2023-12-04 09:21:11.213 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:21:11.220 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:21:11.680 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 467.1734ms
+2023-12-04 09:21:15.185 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 38
+2023-12-04 09:21:15.190 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:15.265 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:15.266 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 38 - 400 - application/problem+json 80.3535ms
+2023-12-04 09:21:26.517 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 56
+2023-12-04 09:21:26.518 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:26.532 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:21:26.532 +02:00 [INF] Property username : momenzaki
+2023-12-04 09:21:26.532 +02:00 [INF] Property password : password1
+2023-12-04 09:21:27.268 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:21:27.595 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 1062 ms
+2023-12-04 09:21:27.600 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:27.608 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 56 - 200 - application/json 1090.4833ms
+2023-12-04 09:21:44.033 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 55
+2023-12-04 09:21:44.034 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:44.035 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:21:44.036 +02:00 [INF] Property username : momenzaki
+2023-12-04 09:21:44.036 +02:00 [INF] Property password : password
+2023-12-04 09:21:44.050 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:21:44.107 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 70 ms
+2023-12-04 09:21:44.142 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:44.143 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 55 - 400 - application/problem+json 109.3791ms
+2023-12-04 09:21:48.502 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44327/api/login application/json 56
+2023-12-04 09:21:48.503 +02:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:48.504 +02:00 [INF] Handling LoginCommand
+2023-12-04 09:21:48.504 +02:00 [INF] Property username : momenzaki
+2023-12-04 09:21:48.504 +02:00 [INF] Property password : password1
+2023-12-04 09:21:48.539 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userName_0='?' (Size = 9)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."UserName" = @__userName_0
+LIMIT 1
+2023-12-04 09:21:48.593 +02:00 [INF] Handled LoginCommand with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.LoggedInCredentials] in 89 ms
+2023-12-04 09:21:48.594 +02:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2023-12-04 09:21:48.594 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44327/api/login application/json 56 - 200 - application/json 92.2917ms
+2023-12-04 09:23:02.495 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:23:02.503 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 8.1784ms
+2023-12-04 09:23:02.545 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:23:02.546 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.6032ms
+2023-12-04 09:23:02.632 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:23:02.653 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.5589ms
+2023-12-04 09:23:02.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:23:02.816 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.6274ms
+2023-12-04 09:23:09.609 +02:00 [INF] Registered 12 endpoints in 706 milliseconds.
+2023-12-04 09:23:09.755 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 09:23:09.826 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 09:23:09.826 +02:00 [INF] Hosting environment: Development
+2023-12-04 09:23:09.826 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 09:23:09.843 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 09:23:10.047 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:23:10.055 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 211.3819ms
+2023-12-04 09:23:10.155 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 108.0308ms
+2023-12-04 09:23:10.202 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:23:10.206 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 3.6717ms
+2023-12-04 09:23:10.260 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:23:10.296 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.6688ms
+2023-12-04 09:23:10.470 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:23:10.480 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 09:23:10.962 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 491.6991ms
+2023-12-04 09:23:14.083 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 09:23:14.192 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 09:23:14.223 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 09:23:14.920 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 09:23:14.964 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 740 ms
+2023-12-04 09:23:15.000 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 09:23:15.004 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 921.7469ms
+2023-12-04 09:23:35.117 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 09:23:35.121 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 3.6469ms
+2023-12-04 09:23:35.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 09:23:35.151 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.7012ms
+2023-12-04 09:23:35.172 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 09:23:35.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.4042ms
+2023-12-04 09:23:35.268 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 09:23:35.269 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.2980ms

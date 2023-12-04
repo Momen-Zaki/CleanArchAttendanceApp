@@ -17,7 +17,7 @@ public class UpdateUser : Endpoint<UpdateRequest, UpdateResponse>
     public override void Configure()
     {
         Put("users/{Id:Guid}");
-        Roles("Admin");
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Update a User by Id";

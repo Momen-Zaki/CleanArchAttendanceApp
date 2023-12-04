@@ -17,7 +17,7 @@ public class GetRecordById
     public override void Configure()
     {
         Get("users/{Id:Guid}/attendance/{recordId:Guid}");
-        Roles("Admin");
+        Roles("admin");
         Summary(s =>
         {
             s.Summary = "Get Attendance Record of a User by Record Id";
