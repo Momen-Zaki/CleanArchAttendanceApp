@@ -9,6 +9,6 @@ public class UserDto
   public string? UserName { get; set; }
   //public string PasswrodHash { get; set; }
   public string? Role { get; set; }
-  public ICollection<Attendance> AttendanceRecords { get; set; }
-      = new List<Attendance>();
+  public ICollection<AttendanceDto> AttendanceRecords { get; set; }
+      = new List<AttendanceDto>();
 }

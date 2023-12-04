@@ -15,7 +15,7 @@ public class GetUserWithRecordsQueryHandler
   }
   public async Task<Result<UserDto>> Handle(GetUserWithRecordsQuery req, CancellationToken ct)
   {
-    var user = await _repository.GetUserByIdAsync(req.UserId);
+    var user = await _repository.GetUserByIdAsync(req.UserId, true);
     if (user == null)
       return Result.NotFound();
 
@@ -25,8 +25,21 @@ public class GetUserWithRecordsQueryHandler
       FullName = user.FullName,
       UserName = user.UserName,
       Role = user.Role,
-      AttendanceRecords = user.AttendanceRecords
     };
+
+    foreach (var a in user.AttendanceRecords)
+    {
+      UserToSend.AttendanceRecords.Add(new()
+      {
+        Id = a.Id,
+        AttendanceDay = a.AttendanceDay,
+        ClockedInAt = a.ClockedInAt,
+        ClockedIn = a.ClockedIn,
+        ClockedOut = a.ClockedOut,
+        ClockedOutAt = a.ClockedOutAt,
+        UserId = a.UserId
+      });
+    }
 
     return UserToSend;
   }
