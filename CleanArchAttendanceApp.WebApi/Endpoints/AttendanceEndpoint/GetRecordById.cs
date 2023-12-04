@@ -25,8 +25,6 @@ public class GetRecordById
             s.ResponseExamples[200] = new GetRecordByIdResponse()
             { Record = new AttendanceDto() };
             s.Responses[200] = "Returns aa Attendance Record";
-            //s.Responses[401] = "Unauthorized";
-            //s.Responses[403] = "Forbidden";
         });
     }
 

@@ -19,4 +19,10 @@
     <ProjectReference Include="..\CleanArchAttendanceApp.Core\CleanArchAttendanceApp.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Attendance\Command\CreateForUser\" />
+    <Folder Include="Attendance\Command\" />
+    <Folder Include="Attendance\Query\GetRecordById\" />
+  </ItemGroup>
+
 </Project>

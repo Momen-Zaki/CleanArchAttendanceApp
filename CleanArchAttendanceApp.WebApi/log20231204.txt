@@ -855,3 +855,285 @@ FROM "Users" AS "u"
 2023-12-04 09:23:35.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.4042ms
 2023-12-04 09:23:35.268 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
 2023-12-04 09:23:35.269 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.2980ms
+2023-12-04 10:06:39.526 +02:00 [INF] Registered 12 endpoints in 862 milliseconds.
+2023-12-04 10:06:39.695 +02:00 [INF] User profile is available. Using 'C:\Users\mo2me\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-04 10:06:39.806 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-04 10:06:39.806 +02:00 [INF] Hosting environment: Development
+2023-12-04 10:06:39.806 +02:00 [INF] Content root path: E:\Other\Dev\.Net API\CleanArchAttendanceApp\CleanArchAttendanceApp.WebApi
+2023-12-04 10:06:39.825 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger - -
+2023-12-04 10:06:40.037 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 10:06:40.038 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger - - - 302 - - 214.3289ms
+2023-12-04 10:06:40.156 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 118.7218ms
+2023-12-04 10:06:40.207 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 10:06:40.210 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 2.7709ms
+2023-12-04 10:06:40.262 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 10:06:40.290 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.5575ms
+2023-12-04 10:06:40.443 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 10:06:40.455 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-04 10:06:40.972 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 529.2767ms
+2023-12-04 10:06:44.481 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/api/users - -
+2023-12-04 10:06:44.595 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 10:06:44.633 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 10:06:45.322 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 10:06:45.364 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 730 ms
+2023-12-04 10:06:45.396 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 10:06:45.405 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/api/users - - - 200 - application/json 924.7640ms
+2023-12-04 10:06:50.261 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/ - -
+2023-12-04 10:06:50.266 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users'
+2023-12-04 10:06:50.267 +02:00 [INF] Handling GetAllUsersQuery
+2023-12-04 10:06:50.278 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+2023-12-04 10:06:50.280 +02:00 [INF] Handled GetAllUsersQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto]] in 13 ms
+2023-12-04 10:06:50.283 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users'
+2023-12-04 10:06:50.284 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/ - - - 200 - application/json 22.8161ms
+2023-12-04 10:06:51.794 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-12-04 10:06:51.796 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-12-04 10:06:51.802 +02:00 [INF] Handling GetUserByIdQuery
+2023-12-04 10:06:51.803 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:06:51.905 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:06:51.906 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 102 ms
+2023-12-04 10:06:51.909 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-12-04 10:06:51.909 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 114.9702ms
+2023-12-04 10:06:53.624 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-12-04 10:06:53.633 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '12/4/2023 8:06:53 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-04 10:06:53.649 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '12/4/2023 8:06:53 AM'.
+2023-12-04 10:06:53.650 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2023-12-04 10:06:53.655 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-04 10:06:53.656 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 401 - - 32.5165ms
+2023-12-04 10:07:06.108 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-12-04 10:07:06.109 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-12-04 10:07:06.114 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-12-04 10:07:06.114 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:07:06.119 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:07:06.121 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 6 ms
+2023-12-04 10:07:06.131 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-12-04 10:07:06.131 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 23.4233ms
+2023-12-04 10:07:44.505 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/index.html - -
+2023-12-04 10:07:44.509 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/index.html - - - 200 - text/html;+charset=utf-8 4.8314ms
+2023-12-04 10:07:44.609 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - -
+2023-12-04 10:07:44.609 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_framework/aspnetcore-browser-refresh.js - - - 200 13794 application/javascript;+charset=utf-8 0.6649ms
+2023-12-04 10:07:44.614 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/_vs/browserLink - -
+2023-12-04 10:07:44.629 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.1566ms
+2023-12-04 10:07:44.768 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - -
+2023-12-04 10:07:44.770 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44327/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1.5753ms
+2023-12-04 10:08:32.464 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/attendance - -
+2023-12-04 10:08:32.464 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:08:32.468 +02:00 [INF] Handling GetAllForUserQuery
+2023-12-04 10:08:32.468 +02:00 [INF] Property userId : "a9098ae4-37c5-4458-bde0-1be92c4c67ea"
+2023-12-04 10:08:32.535 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:08:32.563 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:08:32.564 +02:00 [INF] Handled GetAllForUserQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.AttendanceDto]] in 95 ms
+2023-12-04 10:08:32.568 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:08:32.569 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/a9098ae4-37c5-4458-bde0-1be92c4c67ea/attendance - - - 200 - application/json 105.0209ms
+2023-12-04 10:08:53.313 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-12-04 10:08:53.314 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-12-04 10:08:53.315 +02:00 [INF] Handling GetUserByIdQuery
+2023-12-04 10:08:53.315 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:08:53.316 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:08:53.316 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 1 ms
+2023-12-04 10:08:53.318 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-12-04 10:08:53.318 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 6.0644ms
+2023-12-04 10:09:11.215 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance - -
+2023-12-04 10:09:11.216 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:09:11.217 +02:00 [INF] Handling GetAllForUserQuery
+2023-12-04 10:09:11.217 +02:00 [INF] Property userId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:09:11.218 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:09:11.219 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:09:11.220 +02:00 [INF] Handled GetAllForUserQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.AttendanceDto]] in 2 ms
+2023-12-04 10:09:11.221 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:09:11.221 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance - - - 200 - application/json 5.8608ms
+2023-12-04 10:09:16.043 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-12-04 10:09:16.044 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-12-04 10:09:16.044 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-12-04 10:09:16.045 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:09:16.046 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:09:16.046 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 1 ms
+2023-12-04 10:09:16.048 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-12-04 10:09:16.048 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 5.3497ms
+2023-12-04 10:09:25.496 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance - -
+2023-12-04 10:09:25.497 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:09:25.498 +02:00 [INF] Handling GetAllForUserQuery
+2023-12-04 10:09:25.498 +02:00 [INF] Property userId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:09:25.499 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:09:25.500 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:09:25.500 +02:00 [INF] Handled GetAllForUserQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.AttendanceDto]] in 2 ms
+2023-12-04 10:09:25.501 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:09:25.501 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance - - - 200 - application/json 4.9101ms
+2023-12-04 10:10:42.562 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance/2bb38273-042c-402b-bbf4-83d070958e41 - -
+2023-12-04 10:10:42.567 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '12/4/2023 8:10:42 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-04 10:10:42.567 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '11/30/2023 5:58:49 AM', Current time: '12/4/2023 8:10:42 AM'.
+2023-12-04 10:10:42.567 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2023-12-04 10:10:42.568 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-04 10:10:42.568 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance/2bb38273-042c-402b-bbf4-83d070958e41 - - - 401 - - 5.9061ms
+2023-12-04 10:10:51.768 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance/2bb38273-042c-402b-bbf4-83d070958e41 - -
+2023-12-04 10:10:51.769 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance/{recordId:Guid}'
+2023-12-04 10:10:51.772 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:10:51.786 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM "AttenanceRecords" AS "a"
+WHERE "a"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:10:51.831 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance/{recordId:Guid}'
+2023-12-04 10:10:51.831 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance/2bb38273-042c-402b-bbf4-83d070958e41 - - - 400 - application/problem+json 63.0487ms
+2023-12-04 10:12:09.472 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance/ application/json 186
+2023-12-04 10:12:09.478 +02:00 [INF] Executing endpoint 'HTTP: POST /api/users/{Id:Guid}/attendance'
+2023-12-04 10:12:09.512 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:12:09.616 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AttenanceRecords" ("Id", "AttendanceDay", "ClockedIn", "ClockedInAt", "ClockedOut", "ClockedOutAt", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2023-12-04 10:12:09.623 +02:00 [INF] Executed endpoint 'HTTP: POST /api/users/{Id:Guid}/attendance'
+2023-12-04 10:12:09.624 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance/ application/json 186 - 200 - application/json 151.2070ms
+2023-12-04 10:12:13.478 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance - -
+2023-12-04 10:12:13.479 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:12:13.479 +02:00 [INF] Handling GetAllForUserQuery
+2023-12-04 10:12:13.479 +02:00 [INF] Property userId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:12:13.480 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:12:13.481 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."FullName", "t"."PasswrodHash", "t"."Role", "t"."UserName", "a"."Id", "a"."AttendanceDay", "a"."ClockedIn", "a"."ClockedInAt", "a"."ClockedOut", "a"."ClockedOutAt", "a"."UserId"
+FROM (
+    SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+    FROM "Users" AS "u"
+    WHERE "u"."Id" = @__id_0
+    LIMIT 1
+) AS "t"
+LEFT JOIN "AttenanceRecords" AS "a" ON "t"."Id" = "a"."UserId"
+ORDER BY "t"."Id"
+2023-12-04 10:12:13.481 +02:00 [INF] Handled GetAllForUserQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[CleanArchAttendanceApp.Core.Models.AttendanceDto]] in 1 ms
+2023-12-04 10:12:13.482 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/attendance'
+2023-12-04 10:12:13.482 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/attendance - - - 200 - application/json 4.0998ms
+2023-12-04 10:12:16.409 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - -
+2023-12-04 10:12:16.410 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-12-04 10:12:16.410 +02:00 [INF] Handling GetUserByIdQuery
+2023-12-04 10:12:16.410 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:12:16.412 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:12:16.412 +02:00 [INF] Handled GetUserByIdQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserWithoutAttendanceDto] in 1 ms
+2023-12-04 10:12:16.413 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}'
+2023-12-04 10:12:16.413 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b - - - 200 - application/json 4.5586ms
+2023-12-04 10:12:18.382 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - -
+2023-12-04 10:12:18.383 +02:00 [INF] Executing endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-12-04 10:12:18.384 +02:00 [INF] Handling GetUserWithRecordsQuery
+2023-12-04 10:12:18.384 +02:00 [INF] Property UserId : "365ebb35-05fa-4ca1-80d0-ec0891fbc07b"
+2023-12-04 10:12:18.385 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."FullName", "u"."PasswrodHash", "u"."Role", "u"."UserName"
+FROM "Users" AS "u"
+WHERE "u"."Id" = @__id_0
+LIMIT 1
+2023-12-04 10:12:18.385 +02:00 [INF] Handled GetUserWithRecordsQuery with Ardalis.Result.Result`1[CleanArchAttendanceApp.Core.Models.UserDto] in 0 ms
+2023-12-04 10:12:18.385 +02:00 [INF] Executed endpoint 'HTTP: GET /api/users/{Id:Guid}/withrecords'
+2023-12-04 10:12:18.385 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44327/api/users/365ebb35-05fa-4ca1-80d0-ec0891fbc07b/withrecords - - - 200 - application/json 3.0157ms

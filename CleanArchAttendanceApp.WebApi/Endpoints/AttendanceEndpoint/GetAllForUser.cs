@@ -1,16 +1,19 @@
-﻿using CleanArchAttendanceApp.Core.Interfaces;
+﻿using Ardalis.Result;
+using CleanArchAttendanceApp.Core.Interfaces;
 using CleanArchAttendanceApp.Core.Models;
+using CleanArchAttendanceApp.UseCases.Attendance.Query.GetAllForUer;
 using FastEndpoints;
+using MediatR;
 
 namespace CleanArchAttendanceApp.WebApi.Endpoints.AttendanceEndpoint;
 
 public class GetAllForUser : EndpointWithoutRequest<GetAllForUserResponse>
 {
-    private readonly IAttendanceRepository _repositoy;
+    private readonly IMediator _mediator;
 
-    public GetAllForUser(IAttendanceRepository repositoy)
+    public GetAllForUser(IMediator mediator)
     {
-        _repositoy = repositoy;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -24,35 +27,28 @@ public class GetAllForUser : EndpointWithoutRequest<GetAllForUserResponse>
             s.ResponseExamples[200] = new GetAllForUserResponse()
             { AttendanceList = new List<AttendanceDto>() };
             s.Responses[200] = "Returns a List of  all Attendance Records of a User";
-            //s.Responses[401] = "Unauthorized";
-            //s.Responses[403] = "Forbidden";
         });
     }
 
     public override async Task HandleAsync(CancellationToken ct)
     {
         var userId = Route<Guid>("Id");
-        var user = await _repositoy.GetUserByIdAsync(userId, true);
-        if (user == null)
-            ThrowError("user not found");
 
-        var attendancRecords =
-            await _repositoy.GetAllAttendanceRecordsByUserIdAsync(user.Id);
-        var result = new List<AttendanceDto>();
-        foreach (var a in attendancRecords)
-        {
-            result.Add(new AttendanceDto()
-            {
-                Id = a.Id,
-                AttendanceDay = a.AttendanceDay,
-                ClockedIn = a.ClockedIn,
-                ClockedInAt = a.ClockedInAt,
-                ClockedOut = a.ClockedOut,
-                ClockedOutAt = a.ClockedOutAt,
-                UserId = a.UserId
-            });
-        }
-        Response.AttendanceList = result;
-        await SendAsync(Response, cancellation: ct);
+        var query = new GetAllForUserQuery(userId);
+        var result = await _mediator.Send(query);
+
+
+        if (result.Status == ResultStatus.Unauthorized)
+            ThrowError("you need to login first!");
+
+        if (result.Status == ResultStatus.Forbidden)
+            ThrowError("you shouldn't be here!");
+
+        if (!result.IsSuccess)
+            foreach (var error in result.Errors)
+                ThrowError(error);
+
+        if (result.IsSuccess)
+            Response.AttendanceList = result.Value;
     }
 }

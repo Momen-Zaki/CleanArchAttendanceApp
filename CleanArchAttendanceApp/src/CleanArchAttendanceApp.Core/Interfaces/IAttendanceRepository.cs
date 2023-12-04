@@ -1,4 +1,5 @@
 ﻿using CleanArchAttendanceApp.Core.Entities;
+using CleanArchAttendanceApp.Core.Models;
 
 namespace CleanArchAttendanceApp.Core.Interfaces;
 
@@ -21,7 +22,8 @@ public interface IAttendanceRepository
   public Task<Attendance> GetAttendanceRecordByIdAsync(Guid id);
   public Task<bool> AttendanceRecordExists(Guid id);
   public Task<bool> DeleteAttendanceRecordAsync(Guid id);
-  public Task<Attendance> AddAttendanceRecord(Attendance newAttendance, Guid userId);
+  public Task<Attendance> AddAttendanceRecordForClockIn(Guid userId);
+  public Task<Attendance> AddAttendanceRecordForUser(AttendanceDto attendanceDto, Guid userId);
   public Task<Attendance> GetAttendanceRecordForTodayByUserIDAsync(Guid id);
 
 

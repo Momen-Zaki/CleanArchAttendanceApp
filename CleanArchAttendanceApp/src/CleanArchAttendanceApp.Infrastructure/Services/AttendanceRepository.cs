@@ -1,6 +1,7 @@
 ﻿using Ardalis.SharedKernel;
 using CleanArchAttendanceApp.Core.Entities;
 using CleanArchAttendanceApp.Core.Interfaces;
+using CleanArchAttendanceApp.Core.Models;
 using CleanArchAttendanceApp.Infrastructure.DbContexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -125,9 +126,31 @@ public class AttendanceRepository : IAttendanceRepository
     return await _context.AttenanceRecords.ToListAsync();
   }
 
-  public async Task<Attendance> AddAttendanceRecord(
-          Attendance newAttendance, Guid userId)
+  public async Task<Attendance> AddAttendanceRecordForClockIn(Guid userId)
   {
+    var newAttendance = new Attendance()
+    {
+      AttendanceDay = DateTime.Now,
+      ClockedIn = true,
+      ClockedInAt = DateTime.Now,
+      ClockedOut = false,
+      ClockedOutAt = new DateTime()
+    };
+    newAttendance.User = await _context.Users.FindAsync(userId);
+    await _context.AttenanceRecords.AddAsync(newAttendance);
+    await SaveChangesAsync();
+    return await Task.FromResult(newAttendance);
+  }
+  public async Task<Attendance> AddAttendanceRecordForUser(AttendanceDto attendanceDto,Guid userId)
+  {
+    var newAttendance = new Attendance()
+    {
+      AttendanceDay = attendanceDto.AttendanceDay,
+      ClockedIn = attendanceDto.ClockedIn,
+      ClockedInAt = attendanceDto.ClockedInAt,
+      ClockedOut = attendanceDto.ClockedOut,
+      ClockedOutAt = attendanceDto.ClockedOutAt,
+    };
     newAttendance.User = await _context.Users.FindAsync(userId);
     await _context.AttenanceRecords.AddAsync(newAttendance);
     await SaveChangesAsync();

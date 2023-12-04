@@ -2,6 +2,7 @@
 using Ardalis.SharedKernel;
 using CleanArchAttendanceApp.Core.Entities;
 using CleanArchAttendanceApp.Core.Interfaces;
+using CleanArchAttendanceApp.Core.Models;
 
 namespace CleanArchAttendanceApp.UseCases.User.Command.ClockIn;
 public class ClockInCommandHandler : ICommandHandler<ClockInCommand, Result>
@@ -23,15 +24,7 @@ public class ClockInCommandHandler : ICommandHandler<ClockInCommand, Result>
         await _repository.GetAttendanceRecordForTodayByUserIDAsync(req.UserId);
     if (attendanceForToday == null)
     {
-      var newAttendance = new Attendance()
-      {
-        AttendanceDay = DateTime.Now,
-        ClockedIn = true,
-        ClockedInAt = DateTime.Now,
-        ClockedOut = false,
-        ClockedOutAt = new DateTime()
-      };
-      await _repository.AddAttendanceRecord(newAttendance, req.UserId);
+      await _repository.AddAttendanceRecordForClockIn(req.UserId);
     }
     else
     {
